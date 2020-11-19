@@ -1,0 +1,38 @@
+@media (max-width:  1200px)
+  .wrapper
+    max-width: 960px
+
+@media (max-width:  1024px)
+  .wrapper
+    max-width: 90%
+  .logo-img
+    width: 132px
+  #search-input
+    width: 275px
+  .navbar-item
+    font-size: 12px
+
+@media ( max-width:  768px)
+  .navbar-top-item:nth-child(n+2), .header-sub
+    display: none
+  .navbar-top-item:last-child
+    display: flex
+  .menu-s
+    width: 16px
+    height: 11px
+    margin: 0
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    &-item
+      width: 16px
+      height: 1px
+      background-color: $dark-text-color
+
+@media (max-width: 480px)
+  .logo-img
+    width: 99px
