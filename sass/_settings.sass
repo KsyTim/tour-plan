@@ -4,10 +4,20 @@ body
   font-family: 'Mulish', sans-serif
   color: $dark-text-color
 
+=wrapper-settings-1900
+  max-width: 1110px
+  margin: auto
+=wrapper-settings-1200
+  max-width: 960px
+  margin: auto
+
+=focused-form-elements
+  &:focus
+    outline: none
+
 a
   text-decoration: none
   color: $dark-text-color
 
-=wrapper-settings
-  max-width: 1110px
-  margin: auto
+.wrapper
+  +wrapper-settings-1900

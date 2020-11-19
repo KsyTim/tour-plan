@@ -13,49 +13,57 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-top-wrapper">
-        <div class="header-top">
-          <a href="#" class="logo">
-            <img
-              src="img/hr-logo.svg"
-              alt="Logo: Best Tour Plan - Hotel Booking"
-              class="logo-img"
-            />
-          </a>
-
-          <form action="#" class="search-form">
-            <input
-              type="text"
-              placeholder="Search Location"
-              name="search-input"
-              id="search-input"
-            />
-            <button class="search-icon">
-              <img src="img/search.svg" alt="Search: Enter location" />
-            </button>
-          </form>
-
-          <div class="user">
-            <a href="#" class="user-profile-link">
+      <div class="header-top">
+        <div class="wrapper">
+          <div class="navbar-top">
+            <a href="#" class="navbar-top-item logo">
               <img
-                src="img/user-ava.jpg"
-                alt="User Profile Photo"
-                class="user-photo"
+                src="img/hr-logo.svg"
+                alt="Logo: Best Tour Plan - Hotel Booking"
+                class="logo-img"
               />
             </a>
 
-            <a href="#" class="user-profile-name">
-              <span class="user-name">Nathan</span>
-            </a>
+            <form action="#" class="navbar-top-item search-form">
+              <input
+                type="text"
+                placeholder="Search Location"
+                name="search-input"
+                id="search-input"
+              />
+              <button class="search-icon">
+                <img src="img/search.svg" alt="Search: Enter location" />
+              </button>
+            </form>
+
+            <div class="navbar-top-item user">
+              <a href="#" class="user-profile-link">
+                <img
+                  src="img/user-ava.jpg"
+                  alt="User Profile Photo"
+                  class="user-photo"
+                />
+              </a>
+
+              <a href="#" class="user-profile-name">
+                <span class="user-name">Nathan</span>
+              </a>
+            </div>
+            <!-- /.user -->
+            <button class="navbar-top-item menu-s">
+              <span class="menu-s-item"></span>
+              <span class="menu-s-item"></span>
+              <span class="menu-s-item"></span>
+            </button>
           </div>
-          <!-- /.user -->
+          <!-- ./navbar-top-->
         </div>
-        <!-- /.header-top -->
+        <!-- /.wrapper -->
       </div>
-      <!-- /.header-top-wrapper -->
-      <div class="header-sub-wrapper">
-        <div class="header-sub">
-          <nav class="header-navbar">
+      <!-- /.header-top -->
+      <div class="header-sub">
+        <div class="wrapper">
+          <div class="navbar-sub">
             <ul class="navbar-items-container">
               <li class="navbar-item">
                 <a href="#" class="navbar-item-link">all deals</a>
@@ -79,12 +87,22 @@
                 <a href="#" class="navbar-item-link">rodrigues</a>
               </li>
             </ul>
-          </nav>
+          </div>
+          <!-- /.navbar-sub -->
         </div>
-        <!-- /.header-sub -->
+        <!-- /.wrapper -->
       </div>
-      <!-- /.header-sub-wrapper -->
+      <!-- /.header-sub -->
     </header>
     <!-- /.header -->
+    <div class="bread-crumb">
+      <div class="wrapper">
+        <span class="bread-crumb-item"
+          >Home / Flash Offers / Grand Hilton Hotel</span
+        >
+      </div>
+    </div>
+    <!-- /.wrapper -->
+    <!-- /.bread-crumb -->
   </body>
 </html>

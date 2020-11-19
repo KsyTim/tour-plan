@@ -1,14 +1,13 @@
-.header-top
+.navbar-top
   display: flex
   align-items: center
   justify-content: space-between
   padding: 40px 0
-  +wrapper-settings
-  &-wrapper
-    background-color: #fff
+  &-item:last-child
+    display: none
 
-.logo
-  margin-right: 108px
+.logo-img
+  width: 177px
 
 .search-form
   display: flex
@@ -24,6 +23,7 @@
   background-color: $light-bgcolor
   border-radius: 6px 0 0 6px
   border: none
+  +focused-form-elements
 
 .search-icon
   display: inline-block
@@ -33,7 +33,8 @@
   background-color: $button-color
   border-radius: 0 6px 6px 0
   border: none
-  margin-right: 368px
+  cursor: pointer
+  +focused-form-elements
 
 .user
   display: flex
@@ -49,10 +50,10 @@
     line-height: 18px
 
 .header-sub
+  background-color: $dark-bgcolor
+
+.navbar-sub
   padding: 31px 0
-  +wrapper-settings
-  &-wrapper
-    background-color: $dark-bgcolor
 
 .navbar-items-container
   display: flex
