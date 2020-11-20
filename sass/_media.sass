@@ -9,10 +9,17 @@
     width: 132px
   #search-input
     width: 275px
-  .navbar-item
-    font-size: 12px
+  .navbar
+    &-item
+      font-size: 12px
+    &-sub
+      padding: 22px 0
 
-@media ( max-width:  768px)
+  .hotel
+    &-container
+      padding: 23px 0 60px
+
+@media ( max-width:  725px)
   .navbar-top-item:nth-child(n+2), .header-sub
     display: none
   .navbar-top-item:last-child
@@ -33,6 +40,30 @@
       height: 1px
       background-color: $dark-text-color
 
+  .hotel
+    &-description
+      justify-content: space-between
+    &-rate
+      flex-basis: auto
+    &-name
+      flex-basis: 100%
+    &-advt
+      margin-left: 0
+      margin-top: 0
+      order: -1
+
+  .about-hotel
+    flex-basis: 100%
+
+  .user-ratings
+    display: none
+
 @media (max-width: 480px)
   .logo-img
     width: 99px
+
+  .hotel
+    &-name
+      margin: 10px 0 0
+    &-container
+      padding: 5px 0 40px

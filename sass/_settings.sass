@@ -3,6 +3,7 @@
 body
   font-family: 'Mulish', sans-serif
   color: $dark-text-color
+  background-color: $light-bgcolor
 
 =wrapper-settings-1900
   max-width: 1110px
@@ -12,6 +13,8 @@ body
   margin: auto
 
 =focused-form-elements
+  &:hover
+    background-color: $hover-button-color
   &:focus
     outline: none
 
