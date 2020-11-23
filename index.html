@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -151,8 +152,8 @@
             </div>
             <!-- /.about-hotel-item hotel-description -->
             <div class="about-hotel-item amenities">
-              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
-              Free
+              Half-Board/ All Inclusive + Complimentary Activities&nbsp;+
+              Child&nbsp;Stays&nbsp;Free
             </div>
             <!-- /.about-hotel-item amenities -->
           </div>
@@ -165,12 +166,50 @@
         </div>
         <!-- /.booking-item hotel-container -->
         <div class="booking-item book-hotel">
-          <div class="book-hotel-item slider"></div>
+          <div class="book-hotel-item slider swiper-container">
+            <!-- If we need navigation buttons -->
+            <button class="slider-button-prev"></button>
+            <button class="slider-button-next"></button>
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="./img/hotel-slider-img-01.svg"
+                  class="slider-pic"
+                  alt="Hotel Photo: Slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/hotel-slider-img-02.png"
+                  class="slider-pic"
+                  alt="Hotel Photo: Slide"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./img/hotel-slider-img-03.jpg"
+                  class="slider-pic"
+                  alt="Hotel Photo: Slide"
+                />
+              </div>
+            </div>
+          </div>
           <!-- /.book-hotel-item slider -->
           <div class="book-hotel-item about-booking">
-            <div class="about-booking-item book-info"></div>
+            <div class="about-booking-item book-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              quaerat facilis dolorem adipisci eligendi. Incidunt blanditiis,
+              cumque reprehenderit accusamus animi quod rerum tempore eum, quis
+              exercitationem autem laborum. Tempora, expedita.
+            </div>
             <!-- /.about-booking-item -->
-            <div class="about-booking-item map"></div>
+            <div class="about-booking-item map">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+              fugit. Ex quam explicabo, dolorum, molestias officia maxime, in
+              accusantium magnam dolores autem distinctio voluptatum ratione
+              minus aut! Impedit, atque nemo?
+            </div>
             <!-- /.about-booking-item -->
           </div>
           <!-- /.book-hotel-item about-booking -->
@@ -180,5 +219,8 @@
       <!-- /.wrapper -->
     </section>
     <!-- /.booking -->
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

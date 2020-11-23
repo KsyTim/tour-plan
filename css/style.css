@@ -520,7 +520,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px 0 70px;
+  padding: 23px 0 20px;
 }
 
 .about-hotel {
@@ -567,6 +567,73 @@ template {
 .user-ratings-item:last-child {
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper-container {
+  width: 728px;
+  height: 450px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.book-hotel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-button-prev, .slider-button-next {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button-prev {
+  left: 18px;
+  background-image: url(../img/slider-arrow-left.svg);
+}
+
+.slider-button-next {
+  right: 18px;
+  background-image: url(../img/slider-arrow-right.svg);
+}
+
+.slider-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-booking {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.book-info, .map {
+  max-width: 350px;
+  margin: 0 0 27px 30px;
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {
