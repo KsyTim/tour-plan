@@ -2,6 +2,11 @@
   .wrapper
     max-width: 960px
 
+  .slider
+    width: 585px
+    &-pic
+      height: 100%
+
 @media (max-width:  1024px)
   .wrapper
     max-width: 90%
@@ -15,11 +20,47 @@
     &-sub
       padding: 22px 0
 
-  .hotel
-    &-container
-      padding: 23px 0 60px
+  .book-hotel
+    padding-bottom: 60px
 
-@media ( max-width:  725px)
+  .slider
+    width: 538px
+
+@media ( max-width:  992px)
+  .wrapper
+    max-width: 700px
+  .logo-img
+    width: 132px
+  #search-input
+    width: 275px
+  .navbar
+    &-item
+      font-size: 12px
+    &-sub
+      padding: 22px 0
+
+  .slider
+    width: 700px
+
+  .book
+    &-hotel
+      flex-direction: column
+    &-info
+      width: 340px
+  .map
+    width: 340px
+
+  .swiper-container
+    width: 100%
+    margin-bottom: 30px
+
+  .about-booking
+    flex-direction: row
+
+@media ( max-width:  768px)
+  .wrapper
+    max-width: 620px
+
   .navbar-top-item:nth-child(n+2), .header-sub
     display: none
   .navbar-top-item:last-child
@@ -58,7 +99,111 @@
   .user-ratings
     display: none
 
+  .slider
+    height: 350px
+
+  .book
+    &-info
+      width: 300px
+  .map
+    width: 300px
+
+@media ( max-width:  660px)
+  .wrapper
+    max-width: 520px
+
+  .navbar-top-item:nth-child(n+2), .header-sub
+    display: none
+  .navbar-top-item:last-child
+    display: flex
+  .menu-s
+    width: 16px
+    height: 11px
+    margin: 0
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    &-item
+      width: 16px
+      height: 1px
+      background-color: $dark-text-color
+
+  .slider
+    width: 520px
+
+  .book
+    &-info
+      width: 250px
+  .map
+    width: 250px
+
+@media ( max-width:  570px)
+  .wrapper
+    max-width: 450px
+
+  .navbar-top-item:nth-child(n+2), .header-sub
+    display: none
+  .navbar-top-item:last-child
+    display: flex
+  .menu-s
+    width: 16px
+    height: 11px
+    margin: 0
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    &-item
+      width: 16px
+      height: 1px
+      background-color: $dark-text-color
+
+  .slider
+    width: 450px
+
+  .book
+    &-info
+      width: 215px
+      height: 212.8px
+  .map
+    width: 215px
+
+  .price
+    &-main
+      width: 75px
+    &-cost
+      font-size: 18px
+      line-height: 24px
+    &-end
+      font-size: 10px
+      line-height: 14px
+    &-conditions
+      min-width: 65px
+
+  .guests, .rooms
+    &-info
+      font-size: 10px
+      line-height: 14px
+
+  .title, .call-info
+    font-size: 14px
+    line-height: 24px
+
+  .hotel
+  &-advt
+    font-size: 10px
+
 @media (max-width: 480px)
+  .wrapper
+    max-width: 340px
+
   .logo-img
     width: 99px
 
@@ -66,4 +211,70 @@
     &-name
       margin: 10px 0 0
     &-container
-      padding: 5px 0 40px
+      padding: 11px 0 20px
+
+  .about-booking
+    flex-direction: column
+
+  .book-info
+    padding-bottom: 40px
+    width: 340px
+    height: 210px
+    margin-bottom: 20px
+
+  .slider
+    width: 340px
+    height: 210px
+    &-button
+      &-prev, &-next
+        width: 12px
+        height: 12px
+        margin-top: -6px
+        background-size: 10px
+      &-prev
+        left: 7px
+      &-next
+        right: 7px
+
+  .swiper-container
+    margin-bottom: 20px
+
+  .price
+    &-main
+      width: 86px
+  &-start
+    font-size: 10px
+    line-height: 14px
+  &-cost
+    font-size: 24px
+    line-height: 33px
+  &-end
+    font-size: 12px
+    line-height: 16px
+  &-conditions
+    min-width: 80px
+
+  .guests, .rooms
+    &-info
+      font-size: 12px
+      line-height: 16px
+
+  .title, .call-info
+    font-size: 18px
+    line-height: 25px
+
+  .map
+    width: 340px
+
+@media (max-width: 365px)
+  .wrapper
+    max-width: 280px
+
+  .book-info
+    width: 280px
+
+  .slider
+    width: 280px
+
+  .map
+    width: 280px
