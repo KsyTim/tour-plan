@@ -24,17 +24,51 @@
     align-items: center
     justify-content: space-between
     padding: 23px 0 20px
+  &-slider
+    width: 728px
+    height: 450px
+    &-item
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      margin: 0
+      &::after
+        z-index: 5
+        width: 100%
+        height: 100%
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        +pseudo-elements
+    &-prev, &-next
+      padding: 0
+      background-color: transparent
+      margin-top: -15px
+      +slider-arrows
+    &-prev
+      left: 18px
+      background-image: url(../img/slider-arrow-left.svg)
+    &-next
+      right: 18px
+      background-image: url(../img/slider-arrow-right.svg)
+  &-pic
+    width: 100%
+    object-fit: cover
 
 .about-hotel
   display: flex
   flex-flow: column wrap
 
 .button
-  border: none
   cursor: pointer
   background-color: $button-color
   color: $light-text-color
   +focused-form-elements
+  +hover-form-elements
   &-book-info
     width: 100%
     min-height: 45px
@@ -64,24 +98,6 @@
       font-size: 14px
       line-height: 18px
 
-.swiper-container
-  width: 100%
-  height: 100%
-  position: relative
-  border-radius: 8px
-  margin: 0
-  &::after
-    content: ''
-    position: absolute
-    z-index: 5
-    width: 100%
-    height: 100%
-    top: 0
-    right: 0
-    left: 0
-    bottom: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-
 .book
   &-hotel
     display: flex
@@ -100,38 +116,13 @@
     color: $light-text-color
     padding: 29px 29px 26px 26px
 
-.slider
-  width: 728px
-  height: 450px
-  &-button
-    &-prev, &-next
-      width: 30px
-      height: 30px
-      border: none
-      cursor: pointer
-      padding: 0
-      background-color: transparent
-      position: absolute
-      z-index: 10
-      top: 50%
-      margin-top: -15px
-      background-repeat: no-repeat
-      background-position: center
-      outline: none
-    &-prev
-      left: 18px
-      background-image: url(../img/slider-arrow-left.svg)
-    &-next
-      right: 18px
-      background-image: url(../img/slider-arrow-right.svg)
-  &-pic
-    width: 100%
-    object-fit: cover
-
 .about-booking
   display: flex
   flex-direction: column
   justify-content: space-between
+
+.swiper-container
+  margin: 0
 
 .price
   display: flex

@@ -13,10 +13,28 @@ body
   margin: auto
 
 =focused-form-elements
-  &:hover
-    background-color: $hover-button-color
+  border: none
   &:focus
     outline: none
+
+=hover-form-elements
+  &:hover
+    background-color: $hover-button-color
+
+=pseudo-elements
+  content: ''
+  position: absolute
+
+=slider-arrows
+  position: absolute
+  top: 50%
+  z-index: 50
+  width: 30px
+  height: 30px
+  border: none
+  cursor: pointer
+  background: transparent no-repeat center
+  outline: none
 
 a
   text-decoration: none

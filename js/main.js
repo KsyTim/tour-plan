@@ -1,24 +1,40 @@
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   speed: 1000,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button-next',
-    prevEl: '.slider-button-prev',
+    nextEl: '.hotel-slider-next',
+    prevEl: '.hotel-slider-prev',
   },
 
   keyboard: {
     enabled: true,
   },
-})
+});
+
+var reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  speed: 1000,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slide-next',
+    prevEl: '.reviews-slide-prev',
+  },
+
+  keyboard: {
+    enabled: false,
+  },
+});
 
 ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
     center: [18.440072583306193, 110.01730095614566],
-    zoom: 6
+    zoom: 10
   },
   ),
     myGeoObject = new ymaps.GeoObject({
@@ -30,3 +46,7 @@ function init() {
   myMap.geoObjects.add(myGeoObject);
   
 }
+
+$('.newsletter').parallax({
+  speed: 0.8,
+});

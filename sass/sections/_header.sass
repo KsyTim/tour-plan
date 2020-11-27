@@ -22,7 +22,6 @@
   padding-left: 23px
   background-color: $light-bgcolor
   border-radius: 6px 0 0 6px
-  border: none
   +focused-form-elements
 
 .search-icon
@@ -32,9 +31,9 @@
   height: 40px
   background-color: $button-color
   border-radius: 0 6px 6px 0
-  border: none
   cursor: pointer
   +focused-form-elements
+  +hover-form-elements
 
 .user
   display: flex
@@ -48,6 +47,9 @@
   &-name
     font-size: 14px
     line-height: 18px
+    color: $dark-text-color
+    font-style: normal
+    font-weight: normal
 
 .header
   &-top

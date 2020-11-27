@@ -2,10 +2,15 @@
   .wrapper
     max-width: 960px
 
-  .slider
-    width: 585px
+  .hotel
+    &-slider
+      width: 585px
     &-pic
       height: 100%
+
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width:  1024px)
   .wrapper
@@ -23,8 +28,18 @@
   .book-hotel
     padding-bottom: 60px
 
-  .slider
-    width: 538px
+  .hotel
+    &-slider
+      width: 58%
+
+  .newsletter
+    padding: 93px 0
+    &-container
+      width: 658px
+
+  .card
+    width: 218px
+    height: 218px
 
 @media ( max-width:  992px)
   .wrapper
@@ -39,8 +54,12 @@
     &-sub
       padding: 22px 0
 
-  .slider
-    width: 700px
+  .hotel
+    &-slider
+      width: 700px
+      margin-bottom: 30px
+      &-item
+        width: 100%
 
   .book
     &-hotel
@@ -50,14 +69,35 @@
   .map
     width: 340px
 
-  .swiper-container
-    width: 100%
-    margin-bottom: 30px
-
   .about-booking
     flex-direction: row
 
-@media ( max-width:  768px)
+  .reviews
+    padding: 40px 0 60px
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin: 0 0 50px
+    &-slider
+      &-item
+        max-width: 579px
+  .user
+    &-review
+      max-width: 455px
+
+  .activities
+    padding: 60px 0 70px
+    &-container
+      flex-flow: row wrap
+      align-items: flex-start
+
+  .card
+    width: 339px
+    height: 255px
+    &:nth-child(-n+2)
+      margin-bottom: 20px
+
+@media ( max-width:  767px)
   .wrapper
     max-width: 620px
 
@@ -92,6 +132,10 @@
       margin-left: 0
       margin-top: 0
       order: -1
+    &-slider
+      width: 100%
+      height: 350px
+      margin-bottom: 20px
 
   .about-hotel
     flex-basis: 100%
@@ -99,16 +143,49 @@
   .user-ratings
     display: none
 
-  .slider
-    height: 350px
-
   .book
     &-info
       width: 300px
   .map
     width: 300px
 
-@media ( max-width:  660px)
+  .newsletter
+    &-container
+      width: 520px
+
+  .info
+    &-text
+      font-size: 20px
+      line-height: 25px
+    &-title
+      font-size: 30px
+      line-height: 38px
+
+  #newsletter-input
+    width: 215px
+
+  .reviews
+    &-slider
+      &-item
+        max-width: 450px
+
+  .user
+    &-review
+      max-width: 400px
+
+  .activities
+    &-title
+      margin: 0 0 57px 30px
+    &-container
+      flex-flow: column nowrap
+      align-items: center
+
+  .card
+    width: 90%
+    &:nth-child(-n+3)
+      margin-bottom: 20px
+
+@media ( max-width:  680px)
   .wrapper
     max-width: 520px
 
@@ -132,14 +209,26 @@
       height: 1px
       background-color: $dark-text-color
 
-  .slider
-    width: 520px
+  .hotel
+    &-slider
+      width: 520px
+      &-item
+        margin-bottom: 20px
 
   .book
     &-info
       width: 250px
   .map
     width: 250px
+
+  .reviews
+    &-slider
+      &-item
+        max-width: 420px
+
+  .activities
+    &-title
+      margin: 0 0 57px 25px
 
 @media ( max-width:  570px)
   .wrapper
@@ -165,8 +254,11 @@
       height: 1px
       background-color: $dark-text-color
 
-  .slider
-    width: 450px
+  .hotel
+    &-slider
+      width: 450px
+    &-advt
+      font-size: 10px
 
   .book
     &-info
@@ -196,9 +288,49 @@
     font-size: 14px
     line-height: 24px
 
-  .hotel
-  &-advt
-    font-size: 10px
+  .newsletter
+    &-container
+      width: 450px
+
+  .info
+    &-text
+      font-size: 18px
+      line-height: 20px
+    &-title
+      font-size: 28px
+      line-height: 38px
+
+  #newsletter-input
+    width: 170px
+    height: 50px
+    font-size: 12px
+    line-height: 16px
+    padding-left: 25px
+
+  .newsletter-button
+    width: 55px
+    height: 50px
+
+  .reviews
+    &-title
+      font-size: 26px
+    &-slider
+      &-item
+        max-width: 360px
+        &::before
+          top: 13px
+          left: 44px
+        &::after
+          top: 119px
+          right: 40px
+
+  .user
+    &-review
+      max-width: 320px
+
+  .activities
+    &-title
+      margin: 0 0 57px 20px
 
 @media (max-width: 480px)
   .wrapper
@@ -212,20 +344,9 @@
       margin: 10px 0 0
     &-container
       padding: 11px 0 20px
-
-  .about-booking
-    flex-direction: column
-
-  .book-info
-    padding-bottom: 40px
-    width: 340px
-    height: 210px
-    margin-bottom: 20px
-
-  .slider
-    width: 340px
-    height: 210px
-    &-button
+    &-slider
+      width: 340px
+      height: 210px
       &-prev, &-next
         width: 12px
         height: 12px
@@ -235,8 +356,16 @@
         left: 7px
       &-next
         right: 7px
+      &-item
+        margin-bottom: 20px
 
-  .swiper-container
+  .about-booking
+    flex-direction: column
+
+  .book-info
+    padding-bottom: 40px
+    width: 340px
+    height: 210px
     margin-bottom: 20px
 
   .price
@@ -266,6 +395,77 @@
   .map
     width: 340px
 
+  .newsletter
+    padding: 76px 0 83px
+    &-container
+      width: 340px
+      min-height: 160px
+      flex-direction: column
+      align-items: flex-start
+    &-form
+      width: 100%
+
+  .info
+    &-text
+      font-size: 20px
+      line-height: 25px
+    &-title
+      font-size: 30px
+      line-height: 38px
+
+  #newsletter-input
+    width: 275px
+    height: 55px
+    font-size: 14px
+    line-height: 18px
+    padding-left: 33px
+
+  .newsletter-button
+    width: 65px
+    height: 55px
+    font-size: 12px
+    line-height: 15px
+
+  .reviews
+    padding: 40px 0 50px
+    &-title
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 42px
+    &-slider
+      &-item
+        max-width: 281px
+        padding: 5px 29px 36px 33px
+        &::before
+          top: 30px
+          left: 20px
+        &::after
+          top: 115px
+          right: 25px
+    &-slide
+      &-prev, &-next
+        top: 9%
+      &-prev
+        left: 60px
+      &-next
+        right: 60px
+
+  .user
+    &-review
+      max-width: 219px
+
+  .activities
+    &-title
+      margin: 0 0 36px 0
+    &-container
+      flex-flow: column nowrap
+      align-items: center
+
+  .card
+    width: 100%
+    &:nth-child(-n+3)
+      margin-bottom: 20px
+
 @media (max-width: 365px)
   .wrapper
     max-width: 280px
@@ -273,8 +473,24 @@
   .book-info
     width: 280px
 
-  .slider
-    width: 280px
+  .hotel
+    &-slider
+      width: 280px
 
   .map
     width: 280px
+
+  .reviews
+    &-slide
+      &-prev, &-next
+        top: 9%
+      &-prev
+        left: 30px
+      &-next
+        right: 30px
+
+  .activities
+    padding: 40px 0 60px
+    &-title
+      font-size: 18px
+      line-height: 23px
