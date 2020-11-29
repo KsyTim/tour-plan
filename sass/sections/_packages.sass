@@ -1,0 +1,184 @@
+.hotel
+  &-haven
+    height: 500px
+    grid-area: haven
+    position: relative
+    .package
+      &-card
+        &-info
+          width: 350px
+          height: 100%
+          background-color: $dark-bgcolor
+          position: absolute
+          right: 0
+          bottom: 0
+          z-index: 55
+          color: $light-text-color
+          border-radius: 0px 8px 8px 0px
+          padding: 46px 21px 35px 43px
+      &-conditions
+        margin-bottom: 37px !important
+    .card
+      &-hotel
+        &-pic
+          position: relative
+          width: 55%
+          height: 100%
+          object-fit: cover
+          z-index: -1
+          border-radius: 8px 0px 0px 8px
+        &-advt
+          position: absolute
+          left: 0
+          top: 26px
+          width: 95px
+          height: 30px
+          padding: 8px 12px 7px 11px
+          font-size: 12px
+          line-height: 15px
+          font-weight: 600
+          margin: 0
+          border-radius: 0px 4px 4px 0px
+  &-mare
+    grid-area: mare
+    position: relative
+  &-palace
+    grid-area: palace
+    position: relative
+  &-place
+    grid-area: place
+    position: relative
+  &-star
+    grid-area: star
+    position: relative
+
+.packages
+  padding: 40px 0 70px
+  &-title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0 65px
+  &-card
+    width: 350px
+    height: 500px
+    display: flex
+    flex-direction: column
+    &:first-child
+      width: 730px
+    &-container
+      align-items: center
+      display: grid
+      grid-gap: 30px
+      grid-template: 1fr 1fr / 1fr 1fr 1fr
+      grid-template-areas: "haven haven mare" "palace place star"
+
+.package
+  &-card
+    &-info
+      width: 350px
+      min-height: 250px
+      background-color: $dark-bgcolor
+      position: absolute
+      right: 0
+      bottom: 0
+      z-index: 55
+      color: $light-text-color
+      border-radius: 0px 0px 8px 8px
+      padding: 30px 21px 30px 32px
+  &-conditions
+    display: flex
+    flex-direction: column
+    width: 210px
+    height: 67px
+    margin-bottom: 24px !important
+    &-item
+      display: flex
+      align-items: center
+      margin-bottom: 11px
+    &-info
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &-icon
+      margin-right: 14px
+  &-booking
+    display: flex
+    flex-flow: row nowrap
+    align-items: flex-end
+    justify-content: space-between
+
+.card
+  &-rates
+    &-pic
+      margin-right: 2px
+  &-hotel
+    &-pic
+      position: relative
+      width: 100%
+      height: 50%
+      object-fit: cover
+      z-index: -1
+      border-radius: 8px 8px 0px 0px
+    &-advt
+      position: absolute
+      left: 0
+      top: 30px
+      width: 60px
+      height: 18px
+      padding: 4px 9px
+      font-size: 8px
+      font-weight: 600
+      line-height: 10px
+      margin: 0
+      border-radius: 0px 4px 4px 0px
+    &-rate
+      margin-bottom: 5px
+    &-name
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 27px
+    &-description
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 22px
+      margin: 0 0 34px
+
+.booking
+  &-price
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+  &-button
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 11px 27px 10px 26px
+    cursor: pointer
+    background-color: $button-color
+    color: $light-text-color
+    border-radius: 4px
+    +focused-form-elements
+    +hover-form-elements
+    +focused-buttons
+
+.price
+  &-old
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+    margin-bottom: 5px
+  &-new
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
