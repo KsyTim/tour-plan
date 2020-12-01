@@ -1,0 +1,174 @@
+.vr-logo
+  grid-area: vr-logo
+  width: 150px
+  height: 165px
+  margin-top: 30px
+.categories
+  grid-area: categories
+  max-width: 165px
+  min-height: 220px
+.additions
+  grid-area: additions
+  max-width: 251px
+  height: 100%
+.legacy
+  grid-area: legacy
+  max-width: min-content
+  min-height: 127px
+  align-self: start
+  justify-self: end
+.socials
+  grid-area: socials
+  display: flex
+  align-items: center
+  align-content: flex-start
+  align-self: start
+.contacts
+  grid-area: contacts
+  align-self: center
+  &-title
+    margin-bottom: 30px !important
+  &-info
+    margin: 0 0 30px
+  &-details
+    &-item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+    &-info
+      display: flex
+      flex-direction: column
+    &-link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 22px
+      color: $input-color
+  &-phone
+    display: flex
+    flex-direction: row
+    .contacts-icon
+      align-self: flex-start
+  &-icon
+    margin-right: 18px
+  &-email
+    margin: 0
+.feedback
+  grid-area: feedback
+  &-title
+    margin-bottom: 30px !important
+  &-form
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-between
+    &-footer
+      display: flex
+      justify-content: space-between
+  &-areas
+    display: flex
+    justify-content: space-between
+    margin-bottom: 14px
+  &-input
+    height: 50px
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    padding: 18px 23px
+    color: $input-color
+    background-color: $light-bgcolor
+    border-radius: 4px
+    +focused-form-elements
+    &-name
+      flex-basis: 47%
+    &-number
+      flex-basis: 47%
+    &-message
+      min-height: 125px
+      margin-bottom: 22px
+  &-button
+    width: 160px
+    height: 50px
+    background-color: $button-color
+    border-radius: 4px
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    +focused-buttons
+    +hover-form-elements
+    +focused-form-elements
+  &-required-element
+    color: $required
+.info
+  &-features
+    height: 22px
+    grid-area: info-features
+    align-self: flex-end
+    justify-self: self-end
+  &-section-item
+    color: $light-text-color
+
+.footer
+  &-section
+    background-color: $dark-bgcolor
+    padding: 108px 0 46px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    color: $input-color
+  &-card
+    &-container
+      display: grid
+      grid-template: 195px 119px 120px min-content 116px/ repeat(4, 1fr)
+      column-gap: 30px
+      grid-template-areas: "vr-logo categories additions legacy" "vr-logo categories socials socials" "contacts contacts feedback feedback" "contacts contacts feedback feedback" "footer-subinfo footer-subinfo footer-subinfo info-features"
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      margin: 0 0 20px
+      color: $light-text-color
+    &-list
+      padding: 0
+      margin: 0
+      list-style: none
+  &-sub
+    display: none
+  &-subinfo
+    grid-area: footer-subinfo
+    display: flex
+    align-self: flex-end
+    justify-self: self-end
+    justify-content: space-between
+    width: 283px
+    font-size: 12px
+    margin-right: 130px
+    color: $light-text-color
+
+.card
+  &-list
+    &-link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 22px
+      color: $input-color
+
+.social
+  &-title
+    margin: 0
+  &-nets
+    margin-left: 40px
+    display: flex
+    align-items: center
+    max-width: 83px
+    justify-content: space-between
+    &-link
+      margin-right: 10px
+    &-pic
+      width: 24px
+      height: 22px
