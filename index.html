@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-top">
+      <div class="header-top header-top--mobile-fixed">
         <div class="wrapper">
           <div class="navbar-top">
             <a href="#" class="navbar-top-item logo">
@@ -30,7 +30,7 @@
                 type="text"
                 placeholder="Search Location"
                 name="search-input"
-                id="search-input"
+                id="search-form-input"
               />
               <button class="search-icon">
                 <img src="img/search.svg" alt="Search: Enter location" />
@@ -66,6 +66,35 @@
         <div class="wrapper">
           <div class="navbar-sub">
             <ul class="navbar-items-container">
+              <li class="navbar-item">
+                <div class="user">
+                  <a href="#" class="user-profile-link">
+                    <img
+                      src="img/user-ava.jpg"
+                      alt="User Profile Photo"
+                      class="user-photo"
+                    />
+                  </a>
+
+                  <a href="#" class="user-profile-name">
+                    <span class="user-name">Nathan</span>
+                  </a>
+                </div>
+                <!-- /.user -->
+              </li>
+              <li class="navbar-item">
+                <form action="#" class="search-form">
+                  <input
+                    type="text"
+                    placeholder="Search Location"
+                    name="search-input"
+                    id="search-input-mobile"
+                  />
+                  <button class="search-icon">
+                    <img src="img/search.svg" alt="Search: Enter location" />
+                  </button>
+                </form>
+              </li>
               <li class="navbar-item">
                 <a href="#" class="navbar-item-link">all deals</a>
               </li>
@@ -990,7 +1019,8 @@
           <div class="footer-container-item contacts">
             <h3 class="footer-card-title contacts-title">contact details</h3>
             <p class="contacts-info">
-              Feel free to contact us by phone, email or by our contact form
+              Feel free to contact us by phone, email or
+              by&nbsp;our&nbsp;contact&nbsp;form
             </p>
             <div class="contacts-details">
               <div class="contacts-details-item contacts-location">
@@ -1000,8 +1030,8 @@
                   class="contacts-icon"
                 />
                 <a href="#" class="contacts-details-link">
-                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
-                  States
+                  9748 Blossom Hill Rd undefined Lansing,
+                  Idaho&nbsp;68545&nbsp;United&nbsp;States
                 </a>
               </div>
               <!-- /.contacts-details-item contact-location -->
@@ -1016,10 +1046,12 @@
                     >Tel (business hours) : 269 1500</a
                   >
                   <a href="#" class="contacts-details-link"
-                    >Tel (hotline) Monday - Saturday: 52-56-61-38&nbsp;(08:00&nbsp;am&nbsp;–&nbsp;20:00 pm)</a
+                    >Tel (hotline) Monday - Saturday:
+                    52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</a
                   >
                   <a href="#" class="contacts-details-link"
-                    >Tel (hotline) Sunday: 52-56-61-38&nbsp;(08:00&nbsp;am&nbsp;–&nbsp;14:00&nbsp;pm)</a
+                    >Tel (hotline) Sunday:
+                    52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;14:00pm)</a
                   >
                 </div>
                 <!-- /.contact-phone-info -->
@@ -1079,11 +1111,7 @@
           </div>
           <!-- /.footer-container-item .footer-sub-info -->
           <div class="footer-container-item info-features">
-            <img
-              src="./img/features.svg"
-              alt="Features"
-              class="features-pic"
-            />
+            <img src="./img/features.svg" alt="Features" class="features-pic" />
           </div>
           <!-- /.footer-container-item .info-features -->
           <div class="footer-sub">
@@ -1092,7 +1120,7 @@
               <a class="info-section-item">Conditions of use</a>
               <a class="info-section-item">Cancellation policy</a>
             </div>
-             <!-- /.footer-container-item .footer-sub-info -->
+            <!-- /.footer-container-item .footer-sub-info -->
             <div class="footer-container-item sub-features">
               <img
                 src="./img/features.svg"
@@ -1103,10 +1131,8 @@
             <!-- /.footer-container-item .info-features -->
           </div>
           <!-- /.footer-sub -->
-          </div>
-          <!-- /.footer-container-item .info-section -->
         </div>
-        <!-- /.footer-container -->
+        <!-- /.footer-card-container -->
       </div>
       <!-- /.wrapper -->
     </footer>

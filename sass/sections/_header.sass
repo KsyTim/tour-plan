@@ -14,7 +14,7 @@
   flex-direction: row
   justify-content: center
 
-#search-input
+#search-form-input
   width: 285px
   height: 40px
   font-size: 12px
@@ -58,8 +58,11 @@
   &-sub
     background-color: $dark-bgcolor
 
-.navbar-sub
-  padding: 31px 0
+.navbar
+  &-item:nth-child(-n+2)
+    display: none
+  &-sub
+    padding: 31px 0
 
 .navbar-items-container
   display: flex

@@ -47,6 +47,12 @@ function init() {
   
 }
 
-$('.newsletter').parallax({
-  speed: 0.8,
+// $('.newsletter').parallax({
+//   speed: 0.8,
+// });
+
+var menuButton = document.querySelector('.menu-s');
+menuButton.addEventListener("click", function (event) {
+  console.log("Клик по кнопке меню!");
+  document.querySelector(".header-sub").classList.toggle("header-sub--mobile-visible");
 });
