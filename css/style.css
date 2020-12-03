@@ -454,6 +454,10 @@ template {
   padding: 31px 0;
 }
 
+.navbar-hr-container {
+  display: none;
+}
+
 .navbar-items-container {
   display: flex;
   align-items: center;
@@ -2465,6 +2469,597 @@ template {
   .activities-title {
     font-size: 18px;
     line-height: 23px;
+  }
+}
+
+@media screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape) {
+  .header-sub--mobile-visible {
+    padding: 22px 0;
+  }
+  #hr-form-input {
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 23px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+  }
+  #hr-form-input:focus {
+    outline: none;
+  }
+  .hr-user-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .hr-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 18px;
+  }
+  .hr-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .hr-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+  }
+  .hr-search-icon:focus {
+    outline: none;
+  }
+  .hr-search-icon:hover {
+    background-color: #C91537;
+  }
+  .hr-search-icon:active {
+    background-color: #e95974;
+    transition: all .9s;
+  }
+  .hr-mobile--user {
+    grid-area: user-hr-mobile;
+    justify-self: center;
+  }
+  .hr-mobile--form {
+    grid-area: form-hr-mobile;
+    grid-column: 2 / 5;
+  }
+  .hr-mobile--column-first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: first-column;
+  }
+  .hr-mobile--column-second {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: second-column;
+  }
+  .hr-mobile--column-third {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: third-column;
+  }
+  .hr-subcontainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hr-subcontainer-item {
+    margin-bottom: 15px;
+  }
+  .hr-subcontainer-link {
+    color: #FFFFFF;
+  }
+  .navbar-items-container {
+    display: none;
+  }
+  .navbar-hr-container {
+    display: grid;
+    grid-template: 40px 40px 90px/repeat(5, min-content);
+    grid-gap: 18px 120px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+}
+
+@media screen and (min-width: 571px) and (max-width: 680px) and (orientation: landscape) {
+  .header-sub--mobile-visible {
+    padding: 22px 0;
+  }
+  #hr-form-input {
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 23px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+  }
+  #hr-form-input:focus {
+    outline: none;
+  }
+  .hr-user-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .hr-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 18px;
+  }
+  .hr-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .hr-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+  }
+  .hr-search-icon:focus {
+    outline: none;
+  }
+  .hr-search-icon:hover {
+    background-color: #C91537;
+  }
+  .hr-search-icon:active {
+    background-color: #e95974;
+    transition: all .9s;
+  }
+  .hr-mobile--user {
+    grid-area: user-hr-mobile;
+    justify-self: center;
+  }
+  .hr-mobile--form {
+    grid-area: form-hr-mobile;
+    grid-column: 2 / 5;
+  }
+  .hr-mobile--column-first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: first-column;
+  }
+  .hr-mobile--column-second {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: second-column;
+  }
+  .hr-mobile--column-third {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: third-column;
+  }
+  .hr-subcontainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hr-subcontainer-item {
+    margin-bottom: 15px;
+  }
+  .hr-subcontainer-link {
+    color: #FFFFFF;
+  }
+  .navbar-items-container {
+    display: none;
+  }
+  .navbar-hr-container {
+    display: grid;
+    grid-template: 40px 40px 90px/repeat(5, min-content);
+    grid-gap: 18px 96px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 570px) and (orientation: landscape) {
+  .header-sub--mobile-visible {
+    padding: 22px 0;
+  }
+  #hr-form-input {
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 23px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+  }
+  #hr-form-input:focus {
+    outline: none;
+  }
+  .hr-user-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .hr-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 18px;
+  }
+  .hr-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .hr-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+  }
+  .hr-search-icon:focus {
+    outline: none;
+  }
+  .hr-search-icon:hover {
+    background-color: #C91537;
+  }
+  .hr-search-icon:active {
+    background-color: #e95974;
+    transition: all .9s;
+  }
+  .hr-mobile--user {
+    grid-area: user-hr-mobile;
+    justify-self: center;
+  }
+  .hr-mobile--form {
+    grid-area: form-hr-mobile;
+    grid-column: 2 / 5;
+  }
+  .hr-mobile--column-first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: first-column;
+  }
+  .hr-mobile--column-second {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: second-column;
+  }
+  .hr-mobile--column-third {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: third-column;
+  }
+  .hr-subcontainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hr-subcontainer-item {
+    margin-bottom: 15px;
+  }
+  .hr-subcontainer-link {
+    color: #FFFFFF;
+  }
+  .navbar-items-container {
+    display: none;
+  }
+  .navbar-hr-container {
+    display: grid;
+    grid-template: 40px 40px 90px/repeat(5, min-content);
+    grid-gap: 18px 80px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+}
+
+@media screen and (min-width: 366px) and (max-width: 480px) and (orientation: landscape) {
+  .header-sub--mobile-visible {
+    padding: 22px 0;
+  }
+  #hr-form-input {
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 23px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+  }
+  #hr-form-input:focus {
+    outline: none;
+  }
+  .hr-user-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .hr-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 18px;
+  }
+  .hr-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .hr-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 40px;
+    background-color: #EC1F46;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+  }
+  .hr-search-icon:focus {
+    outline: none;
+  }
+  .hr-search-icon:hover {
+    background-color: #C91537;
+  }
+  .hr-search-icon:active {
+    background-color: #e95974;
+    transition: all .9s;
+  }
+  .hr-mobile--user {
+    grid-area: user-hr-mobile;
+    justify-self: center;
+  }
+  .hr-mobile--form {
+    grid-area: form-hr-mobile;
+    grid-column: 2 / 5;
+  }
+  .hr-mobile--column-first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: first-column;
+  }
+  .hr-mobile--column-second {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: second-column;
+  }
+  .hr-mobile--column-third {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: third-column;
+  }
+  .hr-subcontainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hr-subcontainer-item {
+    margin-bottom: 15px;
+  }
+  .hr-subcontainer-link {
+    color: #FFFFFF;
+  }
+  .navbar-items-container {
+    display: none;
+  }
+  .navbar-hr-container {
+    display: grid;
+    grid-template: 40px 40px 90px/repeat(5, min-content);
+    grid-gap: 18px 35px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 365px) and (orientation: landscape) {
+  .header-sub--mobile-visible {
+    padding: 22px 0;
+  }
+  #hr-form-input {
+    width: 70%;
+    height: 30px;
+    font-size: 10px;
+    line-height: 15px;
+    padding-left: 15px;
+    background-color: #F5FAFE;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+  }
+  #hr-form-input:focus {
+    outline: none;
+  }
+  .hr-user-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .hr-user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-right: 18px;
+  }
+  .hr-user-name {
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .hr-search-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    height: 30px;
+    background-color: #EC1F46;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+  }
+  .hr-search-icon:focus {
+    outline: none;
+  }
+  .hr-search-icon:hover {
+    background-color: #C91537;
+  }
+  .hr-search-icon:active {
+    background-color: #e95974;
+    transition: all .9s;
+  }
+  .hr-mobile--user {
+    grid-area: user-hr-mobile;
+    justify-self: center;
+  }
+  .hr-mobile--form {
+    grid-area: form-hr-mobile;
+    grid-column: 3 / 6;
+    align-self: center;
+  }
+  .hr-mobile--column-first {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: first-column;
+  }
+  .hr-mobile--column-second {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: second-column;
+  }
+  .hr-mobile--column-third {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-area: third-column;
+  }
+  .hr-subcontainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hr-subcontainer-item {
+    margin-bottom: 15px;
+  }
+  .hr-subcontainer-link {
+    color: #FFFFFF;
+  }
+  .navbar-items-container {
+    display: none;
+  }
+  .navbar-hr-container {
+    display: grid;
+    grid-template: 40px 90px min-content/repeat(5, min-content);
+    grid-gap: 25px 35px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column second-column" "third-column third-column third-column third-column third-column";
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

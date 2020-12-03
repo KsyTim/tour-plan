@@ -64,17 +64,21 @@
   &-sub
     padding: 31px 0
 
-.navbar-items-container
-  display: flex
-  align-items: center
-  justify-content: space-between
-  list-style: none
-  padding: 0
-
-.navbar-item
-  font-weight: bold
-  font-size: 14px
-  line-height: 18px
-  text-transform: uppercase
-  &-link
-    color: $light-text-color
+.navbar
+  &-hr
+    &-container
+      display: none
+  &-items
+    &-container
+      display: flex
+      align-items: center
+      justify-content: space-between
+      list-style: none
+      padding: 0
+  &-item
+    font-weight: bold
+    font-size: 14px
+    line-height: 18px
+    text-transform: uppercase
+    &-link
+      color: $light-text-color

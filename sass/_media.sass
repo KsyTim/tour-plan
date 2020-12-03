@@ -886,3 +886,514 @@
     &-title
       font-size: 18px
       line-height: 23px
+
+@media screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape)
+  .header
+    &-sub--mobile-visible
+      padding: 22px 0
+
+  #hr-form-input
+    width: 80%
+    height: 40px
+    font-size: 12px
+    line-height: 15px
+    padding-left: 23px
+    background-color: $light-bgcolor
+    border-radius: 6px 0 0 6px
+    display: inline-block
+    vertical-align: middle
+    +focused-form-elements
+
+  .hr
+    &-user
+      &-mobile
+        display: flex
+        align-items: center
+      &-photo
+        width: 40px
+        height: 40px
+        border-radius: 40px
+        object-fit: cover
+        margin-right: 18px
+      &-name
+        font-size: 14px
+        line-height: 18px
+        color: $light-text-color
+        font-style: normal
+        font-weight: normal
+    &-search
+      &-icon
+        display: inline-block
+        vertical-align: middle
+        width: 20%
+        height: 40px
+        background-color: $button-color
+        border-radius: 0 6px 6px 0
+        cursor: pointer
+        +focused-form-elements
+        +hover-form-elements
+        +focused-buttons
+    &-mobile
+      &--user
+        grid-area: user-hr-mobile
+        justify-self: center
+      &--form
+        grid-area: form-hr-mobile
+        grid-column: 2 / 5
+      &--column
+        &-first
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: first-column
+        &-second
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: second-column
+        &-third
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: third-column
+    &-subcontainer
+      list-style: none
+      padding: 0
+      margin: 0
+      &-item
+        margin-bottom: 15px
+      &-link
+        color: $light-text-color
+
+  .navbar
+    &-items
+      &-container
+        display: none
+    &-hr
+      &-container
+        display: grid
+        grid-template: 40px 40px 90px / repeat(5, min-content)
+        grid-gap: 18px 120px
+        grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column"
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 0
+
+@media screen and (min-width: 571px) and (max-width: 680px) and (orientation: landscape)
+  .header
+    &-sub--mobile-visible
+      padding: 22px 0
+
+  #hr-form-input
+    width: 80%
+    height: 40px
+    font-size: 12px
+    line-height: 15px
+    padding-left: 23px
+    background-color: $light-bgcolor
+    border-radius: 6px 0 0 6px
+    display: inline-block
+    vertical-align: middle
+    +focused-form-elements
+
+  .hr
+    &-user
+      &-mobile
+        display: flex
+        align-items: center
+      &-photo
+        width: 40px
+        height: 40px
+        border-radius: 40px
+        object-fit: cover
+        margin-right: 18px
+      &-name
+        font-size: 14px
+        line-height: 18px
+        color: $light-text-color
+        font-style: normal
+        font-weight: normal
+    &-search
+      &-icon
+        display: inline-block
+        vertical-align: middle
+        width: 20%
+        height: 40px
+        background-color: $button-color
+        border-radius: 0 6px 6px 0
+        cursor: pointer
+        +focused-form-elements
+        +hover-form-elements
+        +focused-buttons
+    &-mobile
+      &--user
+        grid-area: user-hr-mobile
+        justify-self: center
+      &--form
+        grid-area: form-hr-mobile
+        grid-column: 2 / 5
+      &--column
+        &-first
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: first-column
+        &-second
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: second-column
+        &-third
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: third-column
+    &-subcontainer
+      list-style: none
+      padding: 0
+      margin: 0
+      &-item
+        margin-bottom: 15px
+      &-link
+        color: $light-text-color
+
+  .navbar
+    &-items
+      &-container
+        display: none
+    &-hr
+      &-container
+        display: grid
+        grid-template: 40px 40px 90px / repeat(5, min-content)
+        grid-gap: 18px 96px
+        grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column"
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 0
+
+@media screen and (min-width: 481px) and (max-width: 570px) and (orientation: landscape)
+  .header
+    &-sub--mobile-visible
+      padding: 22px 0
+
+  #hr-form-input
+    width: 80%
+    height: 40px
+    font-size: 12px
+    line-height: 15px
+    padding-left: 23px
+    background-color: $light-bgcolor
+    border-radius: 6px 0 0 6px
+    display: inline-block
+    vertical-align: middle
+    +focused-form-elements
+
+  .hr
+    &-user
+      &-mobile
+        display: flex
+        align-items: center
+      &-photo
+        width: 40px
+        height: 40px
+        border-radius: 40px
+        object-fit: cover
+        margin-right: 18px
+      &-name
+        font-size: 14px
+        line-height: 18px
+        color: $light-text-color
+        font-style: normal
+        font-weight: normal
+    &-search
+      &-icon
+        display: inline-block
+        vertical-align: middle
+        width: 20%
+        height: 40px
+        background-color: $button-color
+        border-radius: 0 6px 6px 0
+        cursor: pointer
+        +focused-form-elements
+        +hover-form-elements
+        +focused-buttons
+    &-mobile
+      &--user
+        grid-area: user-hr-mobile
+        justify-self: center
+      &--form
+        grid-area: form-hr-mobile
+        grid-column: 2 / 5
+      &--column
+        &-first
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: first-column
+        &-second
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: second-column
+        &-third
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: third-column
+    &-subcontainer
+      list-style: none
+      padding: 0
+      margin: 0
+      &-item
+        margin-bottom: 15px
+      &-link
+        color: $light-text-color
+
+  .navbar
+    &-items
+      &-container
+        display: none
+    &-hr
+      &-container
+        display: grid
+        grid-template: 40px 40px 90px / repeat(5, min-content)
+        grid-gap: 18px 80px
+        grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column"
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 0
+
+@media screen and (min-width: 366px) and (max-width: 480px) and (orientation: landscape)
+  .header
+    &-sub--mobile-visible
+      padding: 22px 0
+
+  #hr-form-input
+    width: 80%
+    height: 40px
+    font-size: 12px
+    line-height: 15px
+    padding-left: 23px
+    background-color: $light-bgcolor
+    border-radius: 6px 0 0 6px
+    display: inline-block
+    vertical-align: middle
+    +focused-form-elements
+
+  .hr
+    &-user
+      &-mobile
+        display: flex
+        align-items: center
+      &-photo
+        width: 40px
+        height: 40px
+        border-radius: 40px
+        object-fit: cover
+        margin-right: 18px
+      &-name
+        font-size: 14px
+        line-height: 18px
+        color: $light-text-color
+        font-style: normal
+        font-weight: normal
+    &-search
+      &-icon
+        display: inline-block
+        vertical-align: middle
+        width: 20%
+        height: 40px
+        background-color: $button-color
+        border-radius: 0 6px 6px 0
+        cursor: pointer
+        +focused-form-elements
+        +hover-form-elements
+        +focused-buttons
+    &-mobile
+      &--user
+        grid-area: user-hr-mobile
+        justify-self: center
+      &--form
+        grid-area: form-hr-mobile
+        grid-column: 2 / 5
+      &--column
+        &-first
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: first-column
+        &-second
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: second-column
+        &-third
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: third-column
+    &-subcontainer
+      list-style: none
+      padding: 0
+      margin: 0
+      &-item
+        margin-bottom: 15px
+      &-link
+        color: $light-text-color
+
+  .navbar
+    &-items
+      &-container
+        display: none
+    &-hr
+      &-container
+        display: grid
+        grid-template: 40px 40px 90px / repeat(5, min-content)
+        grid-gap: 18px 35px
+        grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column"
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 0
+
+@media screen and (min-width: 320px) and (max-width: 365px) and (orientation: landscape)
+  .header
+    &-sub--mobile-visible
+      padding: 22px 0
+
+  #hr-form-input
+    width: 70%
+    height: 30px
+    font-size: 10px
+    line-height: 15px
+    padding-left: 15px
+    background-color: $light-bgcolor
+    border-radius: 6px 0 0 6px
+    display: inline-block
+    vertical-align: middle
+    +focused-form-elements
+
+  .hr
+    &-user
+      &-mobile
+        display: flex
+        align-items: center
+      &-photo
+        width: 40px
+        height: 40px
+        border-radius: 40px
+        object-fit: cover
+        margin-right: 18px
+      &-name
+        font-size: 14px
+        line-height: 18px
+        color: $light-text-color
+        font-style: normal
+        font-weight: normal
+    &-search
+      &-icon
+        display: inline-block
+        vertical-align: middle
+        width: 30%
+        height: 30px
+        background-color: $button-color
+        border-radius: 0 6px 6px 0
+        cursor: pointer
+        +focused-form-elements
+        +hover-form-elements
+        +focused-buttons
+    &-mobile
+      &--user
+        grid-area: user-hr-mobile
+        justify-self: center
+      &--form
+        grid-area: form-hr-mobile
+        grid-column: 3 / 6
+        align-self: center
+      &--column
+        &-first
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: first-column
+        &-second
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: second-column
+        &-third
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          text-transform: uppercase
+          color: $light-text-color
+          grid-area: third-column
+    &-subcontainer
+      list-style: none
+      padding: 0
+      margin: 0
+      &-item
+        margin-bottom: 15px
+      &-link
+        color: $light-text-color
+
+  .navbar
+    &-items
+      &-container
+        display: none
+    &-hr
+      &-container
+        display: grid
+        grid-template: 40px 90px min-content / repeat(5, min-content)
+        grid-gap: 25px 35px
+        grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column second-column" "third-column third-column third-column third-column third-column"
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 0
