@@ -1481,6 +1481,22 @@ template {
   color: #E0E0E0;
 }
 
+.feedback-accept {
+  background-color: #F5FAFE;
+}
+
+.feedback-send {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+.feedback-text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 5px;
+}
+
 .info-features {
   height: 22px;
   grid-area: info-features;
@@ -2474,7 +2490,7 @@ template {
 
 @media screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape) {
   .header-sub--mobile-visible {
-    padding: 22px 0;
+    padding: 50px 0;
   }
   #hr-form-input {
     width: 80%;
@@ -2535,7 +2551,7 @@ template {
   }
   .hr-mobile--form {
     grid-area: form-hr-mobile;
-    grid-column: 2 / 5;
+    grid-column: 3 / 6;
   }
   .hr-mobile--column-first {
     font-style: normal;
@@ -2580,9 +2596,9 @@ template {
   }
   .navbar-hr-container {
     display: grid;
-    grid-template: 40px 40px 90px/repeat(5, min-content);
-    grid-gap: 18px 120px;
-    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    grid-template: 40px 90px/repeat(5, min-content);
+    grid-gap: 30px 137px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;
     margin: 0;
@@ -2590,9 +2606,9 @@ template {
   }
 }
 
-@media screen and (min-width: 571px) and (max-width: 680px) and (orientation: landscape) {
+@media screen and (min-width: 571px) and (max-width: 681px) and (orientation: landscape) {
   .header-sub--mobile-visible {
-    padding: 22px 0;
+    padding: 45px 0;
   }
   #hr-form-input {
     width: 80%;
@@ -2653,7 +2669,7 @@ template {
   }
   .hr-mobile--form {
     grid-area: form-hr-mobile;
-    grid-column: 2 / 5;
+    grid-column: 3 / 6;
   }
   .hr-mobile--column-first {
     font-style: normal;
@@ -2698,9 +2714,9 @@ template {
   }
   .navbar-hr-container {
     display: grid;
-    grid-template: 40px 40px 90px/repeat(5, min-content);
-    grid-gap: 18px 96px;
-    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    grid-template: 40px 90px/repeat(5, min-content);
+    grid-gap: 30px 103px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;
     margin: 0;
@@ -2710,10 +2726,10 @@ template {
 
 @media screen and (min-width: 481px) and (max-width: 570px) and (orientation: landscape) {
   .header-sub--mobile-visible {
-    padding: 22px 0;
+    padding: 40px 0;
   }
   #hr-form-input {
-    width: 80%;
+    width: 75%;
     height: 40px;
     font-size: 12px;
     line-height: 15px;
@@ -2748,7 +2764,7 @@ template {
   .hr-search-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 20%;
+    width: 25%;
     height: 40px;
     background-color: #EC1F46;
     border-radius: 0 6px 6px 0;
@@ -2771,7 +2787,7 @@ template {
   }
   .hr-mobile--form {
     grid-area: form-hr-mobile;
-    grid-column: 2 / 5;
+    grid-column: 3 / 6;
   }
   .hr-mobile--column-first {
     font-style: normal;
@@ -2790,6 +2806,7 @@ template {
     text-transform: uppercase;
     color: #FFFFFF;
     grid-area: second-column;
+    grid-column: 3/5;
   }
   .hr-mobile--column-third {
     font-style: normal;
@@ -2816,9 +2833,9 @@ template {
   }
   .navbar-hr-container {
     display: grid;
-    grid-template: 40px 40px 90px/repeat(5, min-content);
-    grid-gap: 18px 80px;
-    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    grid-template: 40px 90px/repeat(5, min-content);
+    grid-gap: 25px 68px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;
     margin: 0;
@@ -2831,11 +2848,11 @@ template {
     padding: 22px 0;
   }
   #hr-form-input {
-    width: 80%;
+    width: 70%;
     height: 40px;
     font-size: 12px;
     line-height: 15px;
-    padding-left: 23px;
+    padding-left: 15px;
     background-color: #F5FAFE;
     border-radius: 6px 0 0 6px;
     display: inline-block;
@@ -2866,7 +2883,7 @@ template {
   .hr-search-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 20%;
+    width: 30%;
     height: 40px;
     background-color: #EC1F46;
     border-radius: 0 6px 6px 0;
@@ -2889,7 +2906,7 @@ template {
   }
   .hr-mobile--form {
     grid-area: form-hr-mobile;
-    grid-column: 2 / 5;
+    grid-column: 3 / 6;
   }
   .hr-mobile--column-first {
     font-style: normal;
@@ -2934,9 +2951,9 @@ template {
   }
   .navbar-hr-container {
     display: grid;
-    grid-template: 40px 40px 90px/repeat(5, min-content);
-    grid-gap: 18px 35px;
-    grid-template-areas: "user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile user-hr-mobile" "form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column third-column third-column";
+    grid-template: 40px 90px min-content/repeat(5, min-content);
+    grid-gap: 25px 77px;
+    grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column second-column" "third-column third-column third-column third-column third-column";
     list-style: none;
     padding: 0;
     margin: 0;
