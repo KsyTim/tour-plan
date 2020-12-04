@@ -1,4 +1,4 @@
-    <footer class="footer-section">
+  <footer class="footer-section">
       <div class="wrapper">
         <div class="footer-card-container">
           <img
@@ -10,28 +10,30 @@
             <h3 class="footer-card-title">all&nbsp;categories</h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="#" class="card-list-link">All Deals</a>
+                <a href="index.php" class="card-list-link">All Deals</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Hotels</a>
+                <a href="index.php" class="card-list-link">Hotels</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Activities</a>
+                <a href="index.php" class="card-list-link">Activities</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Spa Packages</a>
+                <a href="index.php" class="card-list-link">Spa Packages</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Hotel Day Packages</a>
+                <a href="index.php" class="card-list-link"
+                  >Hotel Day Packages</a
+                >
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Restaurants</a>
+                <a href="index.php" class="card-list-link">Restaurants</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Fitness </a>
+                <a href="index.php" class="card-list-link">Fitness </a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Rodrigues</a>
+                <a href="index.php" class="card-list-link">Rodrigues</a>
               </li>
             </ul>
           </div>
@@ -40,24 +42,26 @@
             <h3 class="footer-card-title">additional&nbsp;information</h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="#" class="card-list-link">About Us </a>
+                <a href="index.php" class="card-list-link">About Us </a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Contact Us</a>
+                <a href="index.php" class="card-list-link">Contact Us</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">How does it work?</a>
+                <a href="index.php" class="card-list-link">How does it work?</a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link"
+                <a href="index.php" class="card-list-link"
                   >Frequently Asked Questions</a
                 >
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Deals.mu loyalty program</a>
+                <a href="index.php" class="card-list-link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link"
+                <a href="index.php" class="card-list-link"
                   >Promote your Business on BTP</a
                 >
               </li>
@@ -68,16 +72,20 @@
             <h3 class="footer-card-title">legal&nbsp;information</h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Terms & Conditions </a>
+                <a href="index.php" class="card-list-link"
+                  >Terms & Conditions
+                </a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Disclaimer </a>
+                <a href="index.php" class="card-list-link">Disclaimer </a>
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Cancellation policy</a>
+                <a href="index.php" class="card-list-link"
+                  >Cancellation policy</a
+                >
               </li>
               <li class="card-list-item">
-                <a href="#" class="card-list-link">Privacy</a>
+                <a href="index.php" class="card-list-link">Privacy</a>
               </li>
             </ul>
           </div>
@@ -85,21 +93,21 @@
           <div class="footer-container-item socials">
             <h3 class="footer-card-title social-title">social&nbsp;network</h3>
             <div class="social-nets">
-              <a href="" class="social-nets-link">
+              <a href="index.php" class="social-nets-link">
                 <img
                   src="./img/facebook.svg"
                   alt="Socials: Facebook"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="" class="social-nets-link">
+              <a href="index.php" class="social-nets-link">
                 <img
                   src="./img/youtube.svg"
                   alt="Socials: Youtube"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="" class="social-nets-link">
+              <a href="index.php" class="social-nets-link">
                 <img
                   src="./img/instagram.svg"
                   alt="Socials: Instagram"
@@ -123,7 +131,10 @@
                   alt="Contacts Icon: Location"
                   class="contacts-icon"
                 />
-                <a href="#" class="contacts-details-link">
+                <a
+                  href="https://goo.gl/maps/e8deWpPPBuMu4c4s9"
+                  class="contacts-details-link"
+                >
                   9748 Blossom Hill Rd undefined Lansing,
                   Idaho&nbsp;68545&nbsp;United&nbsp;States
                 </a>
@@ -136,14 +147,14 @@
                   class="contacts-icon"
                 />
                 <div class="contacts-details-info">
-                  <a href="#" class="contacts-details-link"
+                  <a href="tel: 269 1500" class="contacts-details-link"
                     >Tel (business hours) : 269 1500</a
                   >
-                  <a href="#" class="contacts-details-link"
+                  <a href="tel: 52-56-61-38" class="contacts-details-link"
                     >Tel (hotline) Monday - Saturday:
                     52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</a
                   >
-                  <a href="#" class="contacts-details-link"
+                  <a href="tel: 52-56-61-38" class="contacts-details-link"
                     >Tel (hotline) Sunday:
                     52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;14:00pm)</a
                   >
@@ -192,16 +203,25 @@
                 class="feedback-input feedback-input-message"
               ></textarea>
               <div class="feedback-form-footer">
-                <button class="button feedback-button" type="submit" value="feedback" name="action">Send</button>
+                <button
+                  class="button feedback-button"
+                  type="submit"
+                  value="feedback"
+                  name="action"
+                >
+                  Send
+                </button>
                 <span class="feedback-required-element">*Required Fields</span>
               </div>
             </form>
           </div>
           <!-- /.footer-container-item feedback -->
           <div class="footer-container-item footer-subinfo">
-            <a class="info-section-item">Disclaimer</a>
-            <a class="info-section-item">Conditions of use</a>
-            <a class="info-section-item">Cancellation policy</a>
+            <a href="index.php" class="info-section-item">Disclaimer</a>
+            <a href="index.php" class="info-section-item">Conditions of use</a>
+            <a href="index.php" class="info-section-item"
+              >Cancellation policy</a
+            >
           </div>
           <!-- /.footer-container-item .footer-sub-info -->
           <div class="footer-container-item info-features">
@@ -210,9 +230,13 @@
           <!-- /.footer-container-item .info-features -->
           <div class="footer-sub">
             <div class="footer-container-item sub-info">
-              <a class="info-section-item">Disclaimer</a>
-              <a class="info-section-item">Conditions of use</a>
-              <a class="info-section-item">Cancellation policy</a>
+              <a href="index.php" class="info-section-item">Disclaimer</a>
+              <a href="index.php" class="info-section-item"
+                >Conditions of use</a
+              >
+              <a href="index.php" class="info-section-item"
+                >Cancellation policy</a
+              >
             </div>
             <!-- /.footer-container-item .footer-sub-info -->
             <div class="footer-container-item sub-features">
@@ -231,6 +255,63 @@
       <!-- /.wrapper -->
     </footer>
     <!-- /.footer-section -->
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-window">
+        <a href="#" class="modal-close">
+          <img src="./img/close.svg" alt="Icon: close modal window" />
+        </a>
+        <div class="modal-window-container">
+          <h3 class="modal-container-item modal-title">booking</h3>
+          <form
+            action="send.php"
+            method="POST"
+            class="modal-container-item modal-window-form"
+          >
+            <div class="modal-window-areas">
+              <input
+                type="text"
+                placeholder="Your Full Name*"
+                class="modal-window-input modal-window-input-name"
+                name="modal-window-name"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number*"
+                class="modal-window-input modal-window-input-number"
+                name="modal-window-number"
+              />
+              <input
+                type="tel"
+                placeholder="Email*"
+                class="modal-window-input modal-window-input-email"
+                name="modal-window-email"
+              />
+            </div>
+            <textarea
+              name="modal-window-message"
+              id="modal-window-message"
+              placeholder="Message"
+              class="modal-window-input modal-window-input-message"
+            ></textarea>
+            <div class="modal-window-footer">
+              <button
+                class="button modal-window-button"
+                type="submit"
+                value="modal-window"
+                name="action"
+              >
+                Send
+              </button>
+              <span class="modal-window-required">*Required Fields</span>
+            </div>
+          </form>
+        </div>
+        <!-- /.modal-window-container -->
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=06e6d0df-892f-4500-854c-4b40db30a38a&lang=en_US"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

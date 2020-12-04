@@ -1,0 +1,94 @@
+.modal
+  &-overlay
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 200
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &-window
+    max-width: 478px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 33px 88px
+    background-color: $dark-bgcolor
+    border-radius: 8px
+    color: $light-text-color
+    z-index: 210
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &-container
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 302px
+    &-form
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-between
+      flex-basis: 100%
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+    &-footer
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-areas
+      display: flex
+      flex-direction: column
+      width: 302px
+    &-input
+      height: 50px
+      font-weight: 400
+      padding: 18px 23px
+      color: $dark-bgcolor
+      background-color: $light-bgcolor
+      border-radius: 4px
+      margin-bottom: 15px
+      +focused-form-elements
+      &-message
+        min-height: 123px
+        margin-bottom: 15px
+    &-button
+      width: 160px
+      height: 50px
+      background-color: $button-color
+      border-radius: 4px
+      font-style: normal
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      +focused-buttons
+      +hover-form-elements
+      +focused-form-elements
+    &-required
+      color: $required
+      font-weight: bold
+  &-close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+    +focused-form-elements
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin: 0 0 15px

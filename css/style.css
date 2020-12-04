@@ -1064,7 +1064,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   padding-left: 33px;
-  color: #BDBDBD;
+  color: #0A223D;
   background-color: #F5FAFE;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -1429,7 +1429,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   padding: 18px 23px;
-  color: #BDBDBD;
+  color: #0A223D;
   background-color: #F5FAFE;
   border-radius: 4px;
   border: none;
@@ -1483,6 +1483,7 @@ template {
 
 .feedback-accept {
   background-color: #F5FAFE;
+  padding: 50px 0;
 }
 
 .feedback-send {
@@ -1584,6 +1585,146 @@ template {
 .social-nets-pic {
   width: 24px;
   height: 22px;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 200;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-window {
+  max-width: 478px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 33px 88px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  color: #FFFFFF;
+  z-index: 210;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-window--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-window-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 302px;
+}
+
+.modal-window-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal-window-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-window-areas {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+}
+
+.modal-window-input {
+  height: 50px;
+  font-weight: 400;
+  padding: 18px 23px;
+  color: #0A223D;
+  background-color: #F5FAFE;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.modal-window-input:focus {
+  outline: none;
+}
+
+.modal-window-input-message {
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal-window-button {
+  width: 160px;
+  height: 50px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+}
+
+.modal-window-button:active {
+  background-color: #e95974;
+  transition: all .9s;
+}
+
+.modal-window-button:hover {
+  background-color: #C91537;
+}
+
+.modal-window-button:focus {
+  outline: none;
+}
+
+.modal-window-required {
+  color: #E0E0E0;
+  font-weight: bold;
+}
+
+.modal-close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-close:focus {
+  outline: none;
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
 }
 
 @media (max-width: 1200px) {
@@ -2455,6 +2596,10 @@ template {
     line-height: 30px;
     margin: 0 0 40px;
   }
+  .modal-window {
+    max-width: 360px;
+    padding: 25px 29px;
+  }
 }
 
 @media (max-width: 365px) {
@@ -2485,6 +2630,30 @@ template {
   .activities-title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .modal-window {
+    max-width: 280px;
+    padding: 20px 15px;
+  }
+  .modal-window-container {
+    max-width: 260px;
+  }
+  .modal-window-areas {
+    width: 260px;
+  }
+  .modal-window-input {
+    margin-bottom: 10px;
+  }
+  .modal-window-input-message {
+    margin-bottom: 10px;
+  }
+  .modal-window-button {
+    width: 130px;
+    height: 40px;
+  }
+  .modal-title {
+    font-size: 16px;
+    margin: 0 0 10px;
   }
 }
 
@@ -2597,7 +2766,7 @@ template {
   .navbar-hr-container {
     display: grid;
     grid-template: 40px 90px/repeat(5, min-content);
-    grid-gap: 30px 137px;
+    grid-gap: 45px 137px;
     grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;
@@ -2715,7 +2884,7 @@ template {
   .navbar-hr-container {
     display: grid;
     grid-template: 40px 90px/repeat(5, min-content);
-    grid-gap: 30px 103px;
+    grid-gap: 45px 103px;
     grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;
@@ -2834,7 +3003,7 @@ template {
   .navbar-hr-container {
     display: grid;
     grid-template: 40px 90px/repeat(5, min-content);
-    grid-gap: 25px 68px;
+    grid-gap: 45px 68px;
     grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column";
     list-style: none;
     padding: 0;

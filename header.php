@@ -38,7 +38,7 @@
             </form>
 
             <div class="navbar-top-item user">
-              <a href="#" class="user-profile-link">
+              <a href="index.php" class="user-profile-link">
                 <img
                   src="img/user-ava.jpg"
                   alt="User Profile Photo"
@@ -46,7 +46,7 @@
                 />
               </a>
 
-              <a href="#" class="user-profile-name">
+              <a href="index.php" class="user-profile-name">
                 <span class="user-name">Nathan</span>
               </a>
             </div>
@@ -68,7 +68,7 @@
             <ul class="navbar-items-container">
               <li class="navbar-item user-mobile">
                 <div class="user">
-                  <a href="#" class="user-profile-link">
+                  <a href="index.php" class="user-profile-link">
                     <img
                       src="img/user-ava.jpg"
                       alt="User Profile Photo"
@@ -76,7 +76,7 @@
                     />
                   </a>
 
-                  <a href="#" class="user-profile-name">
+                  <a href="index.php" class="user-profile-name">
                     <span class="user-name">Nathan</span>
                   </a>
                 </div>
@@ -105,7 +105,9 @@
                 <a href="index.php" class="navbar-item-link">activities</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">hotel day packages</a>
+                <a href="index.php" class="navbar-item-link"
+                  >hotel day packages</a
+                >
               </li>
               <li class="navbar-item">
                 <a href="index.php" class="navbar-item-link">restaurants</a>
@@ -120,14 +122,14 @@
             <ul class="navbar-hr-container">
               <li class="hr-container-item hr-mobile--user">
                 <div class="hr-user-mobile">
-                  <a href="#" class="user-profile-link">
+                  <a href="index.php" class="user-profile-link">
                     <img
                       src="img/user-ava.jpg"
                       alt="User Profile Photo"
                       class="hr-user-photo"
                     />
                   </a>
-                  <a href="#" class="user-profile-name">
+                  <a href="index.php" class="user-profile-name">
                     <span class="hr-user-name">Nathan</span>
                   </a>
                 </div>
@@ -149,35 +151,43 @@
               <li class="hr-container-item hr-mobile--column-first">
                 <ul class="hr-subcontainer">
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">all deals</a>
+                    <a href="index.php" class="hr-subcontainer-link"
+                      >all deals</a
+                    >
                   </li>
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">hotels</a>
+                    <a href="index.php" class="hr-subcontainer-link">hotels</a>
                   </li>
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">activities</a>
+                    <a href="index.php" class="hr-subcontainer-link"
+                      >activities</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="hr-container-item hr-mobile--column-second">
                 <ul class="hr-subcontainer">
                   <li class="hr-subcontainer-item">
-                    <a href="#" href="#" class="hr-subcontainer-link"
+                    <a href="index.php" class="hr-subcontainer-link"
                       >hotel&nbsp;day&nbsp;packages</a
                     >
                   </li>
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">restaurants</a>
+                    <a href="index.php" class="hr-subcontainer-link"
+                      >restaurants</a
+                    >
                   </li>
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">events</a>
+                    <a href="index.php" class="hr-subcontainer-link">events</a>
                   </li>
                 </ul>
               </li>
               <li class="hr-container-item hr-mobile--column-third">
                 <ul class="hr-subcontainer">
                   <li class="hr-subcontainer-item">
-                    <a href="#" class="hr-subcontainer-link">rodrigues</a>
+                    <a href="index.php" class="hr-subcontainer-link"
+                      >rodrigues</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -194,13 +204,13 @@
       <div class="wrapper">
         <ul class="bread-crumb">
           <li class="bread-crumb-item">
-            <a href="#" class="bread-crumb-link">Home</a>
+            <a href="index.php" class="bread-crumb-link">Home</a>
           </li>
           <li class="bread-crumb-item">
-            <a href="#" class="bread-crumb-link">Flash Offers</a>
+            <a href="index.php" class="bread-crumb-link">Flash Offers</a>
           </li>
           <li class="bread-crumb-item">
-            <a href="#" class="bread-crumb-link">Grand Hilton Hotel</a>
+            <a href="index.php" class="bread-crumb-link">Grand Hilton Hotel</a>
           </li>
         </ul>
         <!-- /.bread-crumb -->

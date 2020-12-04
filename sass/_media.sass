@@ -858,6 +858,11 @@
       line-height: 30px
       margin: 0 0 40px
 
+  .modal
+    &-window
+      max-width: 360px
+      padding: 25px 29px
+
 @media (max-width: 365px)
   .wrapper
     max-width: 280px
@@ -886,6 +891,25 @@
     &-title
       font-size: 18px
       line-height: 23px
+
+  .modal
+    &-window
+      max-width: 280px
+      padding: 20px 15px
+      &-container
+        max-width: 260px
+      &-areas
+        width: 260px
+      &-input
+        margin-bottom: 10px
+        &-message
+          margin-bottom: 10px
+      &-button
+        width: 130px
+        height: 40px
+    &-title
+      font-size: 16px
+      margin: 0 0 10px
 
 @media screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape)
   .header
@@ -982,7 +1006,7 @@
       &-container
         display: grid
         grid-template: 40px 90px / repeat(5, min-content)
-        grid-gap: 30px 137px
+        grid-gap: 45px 137px
         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
         list-style: none
         padding: 0
@@ -1084,7 +1108,7 @@
       &-container
         display: grid
         grid-template: 40px 90px / repeat(5, min-content)
-        grid-gap: 30px 103px
+        grid-gap: 45px 103px
         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
         list-style: none
         padding: 0
@@ -1187,7 +1211,7 @@
       &-container
         display: grid
         grid-template: 40px 90px / repeat(5, min-content)
-        grid-gap: 25px 68px
+        grid-gap: 45px 68px
         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
         list-style: none
         padding: 0
