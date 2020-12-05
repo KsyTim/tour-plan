@@ -8,6 +8,10 @@ $name = $_POST['input-name'];
 $phone = $_POST['input-number'];
 $message = $_POST['feedback-message'];
 $subscription = $_POST['subscription-input'];
+$modalName = $_POST['modal-window-name'];
+$modalEmail = $_POST['modal-window-email'];
+$modalNumber = $_POST['modal-window-number'];
+$modalMessage = $_POST['modal-window-message'];
 
 $titleSub = "Подписка Best Tour Plan";
 $bodySub = "
@@ -22,7 +26,16 @@ $body = "
 <b>Сообщение:</b><br>$message
 ";
 
-function subscribe($title,$body){
+$titleModal = "Новое бронирование Best Tour Plan";
+$bodyModal = "
+<h2>Новая заявка на бронирование</h2>
+<b>Имя:</b> $modalName<br>
+<b>Телефон:</b> $modalNumber<br>
+<b>E-mail:</b> $modalEmail<br><br>
+<b>Сообщение:</b><br>$modalMessage
+";
+
+function sendMessage($title,$body){
     // Настройки PHPMailer
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     try {
@@ -34,11 +47,11 @@ function subscribe($title,$body){
 
         // Настройки вашей почты
         $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-        $mail->Username   = 'kseniia.timoshenko.0220@gmail.com'; // Логин на почте
-        $mail->Password   = '@choOl55'; // Пароль на почте
+        $mail->Username   = ''; // Логин на почте
+        $mail->Password   = ''; // Пароль на почте
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('kseniia.timoshenko.0220@gmail.com', 'Kseniia Timoshenko'); // Адрес самой почты и имя отправителя
+        $mail->setFrom('', ''); // Адрес самой почты и имя отправителя
         // Получатель письма
         $mail->addAddress('timoshenko.ksenia.1998@gmail.com');  
         // Отправка сообщения
@@ -57,51 +70,16 @@ function subscribe($title,$body){
 
 }
 
-function feedback($title,$body){
-    // Настройки PHPMailer
-    $mail = new PHPMailer\PHPMailer\PHPMailer();
-    try {
-        $mail->isSMTP();   
-        $mail->CharSet = "UTF-8";
-        $mail->SMTPAuth   = true;
-        //$mail->SMTPDebug = 2;
-        $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
-
-        // Настройки вашей почты
-        $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-        $mail->Username   = 'kseniia.timoshenko.0220@gmail.com'; // Логин на почте
-        $mail->Password   = '@choOl55'; // Пароль на почте
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port       = 465;
-        $mail->setFrom('kseniia.timoshenko.0220@gmail.com', 'Kseniia Timoshenko'); // Адрес самой почты и имя отправителя
-        // Получатель письма
-        $mail->addAddress('timoshenko.ksenia.1998@gmail.com');  
-        // Отправка сообщения
-        $mail->isHTML(true);
-        $mail->Subject = $title;
-        $mail->Body = $body; 
-        // $mail->send();   
-
-        // Проверяем отравленность сообщения
-        if ($mail->send()) {$result = "success";} 
-        else {$result = "error";}
-
-    } catch (Exception $e) {
-        $result = "error";
-        $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-    }
-
-}
-
 $action = $_POST["action"];
-if($action =="subscribe"){
-    subscribe($titleSub, $bodySub);
+if ($action == "subscribe") {
+    sendMessage($titleSub, $bodySub);
     header('Location: subscribe.php');
-}
-
-if($action == "feedback"){ 
-    feedback($title, $body);
+} elseif ($action == "feedback") { 
+    sendMessage($title, $body);
     header('Location: feedback.php');
+} elseif ($action == "modal-window") {
+    sendMessage($titleModal, $bodyModal);
+    header('Location: booking.php');
 }
 else {
     echo "Error";

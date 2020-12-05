@@ -528,6 +528,28 @@ template {
   line-height: 13px;
 }
 
+.hotel-advt-sub {
+  width: 70px;
+  height: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 13px;
+  color: #FFFFFF;
+  background-color: #EC1F46;
+  text-transform: uppercase;
+}
+
+.hotel-advt-sub:active {
+  background-color: #e95974;
+  transition: all .9s;
+}
+
+.hotel-advt-sub:hover {
+  background-color: #C91537;
+}
+
 .hotel-container {
   display: flex;
   align-items: center;
@@ -743,10 +765,18 @@ template {
   margin-bottom: 17px;
 }
 
-.title, .call-info {
+.quick-way-item .call-info {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+  color: #FFFFFF;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 .map {
@@ -775,11 +805,11 @@ template {
   z-index: 55;
   color: #FFFFFF;
   border-radius: 0px 8px 8px 0px;
-  padding: 46px 21px 35px 43px;
+  padding: 46px 21px 28px 43px;
 }
 
 .hotel-haven .package-conditions {
-  margin-bottom: 37px !important;
+  margin-bottom: 24px !important;
 }
 
 .hotel-haven .card-hotel-pic {
@@ -889,6 +919,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #FFFFFF !important;
 }
 
 .package-conditions-icon {
@@ -946,7 +977,7 @@ template {
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
-  margin: 0 0 34px;
+  margin: 0 0 53px;
 }
 
 .booking-price {
@@ -1484,6 +1515,7 @@ template {
 .feedback-accept {
   background-color: #F5FAFE;
   padding: 50px 0;
+  min-height: 230px;
 }
 
 .feedback-send {
@@ -1495,7 +1527,7 @@ template {
 .feedback-text {
   font-size: 14px;
   line-height: 18px;
-  margin: 0 0 5px;
+  margin: 0 0 15px;
 }
 
 .info-features {
@@ -1741,13 +1773,8 @@ template {
     width: 230px;
     height: 230px;
   }
-  .hotel-haven .package-card-info {
-    width: 315px;
-    padding: 46px 26px 35px 34px;
-    right: -20px;
-  }
   .hotel-haven .package-conditions {
-    margin-bottom: 20px !important;
+    margin-bottom: 21px !important;
   }
   .hotel-haven .card-hotel-pic {
     width: 52%;
@@ -1756,7 +1783,7 @@ template {
     margin: 0 0 15px;
   }
   .hotel-haven .card-hotel-description {
-    margin: 0 0 20px;
+    margin: 0 0 25px;
   }
   .packages-card {
     width: 300px;

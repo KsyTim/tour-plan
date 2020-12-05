@@ -1,11 +1,13 @@
   <footer class="footer-section">
       <div class="wrapper">
         <div class="footer-card-container">
-          <img
-            src="./img/vr-logo.svg"
-            alt="Footer Logo"
-            class="footer-container-item vr-logo"
-          />
+          <a href="index.php">          
+            <img
+              src="./img/vr-logo.svg"
+              alt="Footer Logo"
+              class="footer-container-item vr-logo"
+            />
+        </a> 
           <div class="footer-container-item categories">
             <h3 class="footer-card-title">all&nbsp;categories</h3>
             <ul class="footer-card-list">
@@ -132,7 +134,7 @@
                   class="contacts-icon"
                 />
                 <a
-                  href="https://goo.gl/maps/e8deWpPPBuMu4c4s9"
+                  href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank"
                   class="contacts-details-link"
                 >
                   9748 Blossom Hill Rd undefined Lansing,
@@ -147,14 +149,14 @@
                   class="contacts-icon"
                 />
                 <div class="contacts-details-info">
-                  <a href="tel: 269 1500" class="contacts-details-link"
+                  <a href="tel:269 1500" class="contacts-details-link"
                     >Tel (business hours) : 269 1500</a
                   >
-                  <a href="tel: 52-56-61-38" class="contacts-details-link"
+                  <a href="tel:52-56-61-38" class="contacts-details-link"
                     >Tel (hotline) Monday - Saturday:
                     52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</a
                   >
-                  <a href="tel: 52-56-61-38" class="contacts-details-link"
+                  <a href="tel:52-56-61-38" class="contacts-details-link"
                     >Tel (hotline) Sunday:
                     52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;14:00pm)</a
                   >
@@ -290,7 +292,7 @@
             </div>
             <textarea
               name="modal-window-message"
-              id="modal-window-message"
+              id="modal-message"
               placeholder="Message"
               class="modal-window-input modal-window-input-message"
             ></textarea>

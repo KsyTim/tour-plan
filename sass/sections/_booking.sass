@@ -19,6 +19,19 @@
     border-radius: 3px
     font-size: 10px
     line-height: 13px
+    &-sub
+      width: 70px
+      height: 20px
+      padding: 8px 16px
+      border-radius: 4px
+      font-size: 12px
+      font-weight: 600
+      line-height: 13px
+      color: $light-text-color
+      background-color: $button-color
+      text-transform: uppercase
+      +focused-buttons
+      +hover-form-elements
   &-container
     display: flex
     align-items: center
@@ -169,11 +182,18 @@
   align-items: center
   justify-content: space-between
   margin-bottom: 17px
+  &-item
+    .call-info
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+      color: $light-text-color
 
-.title, .call-info
+.title
   font-weight: 600
   font-size: 18px
   line-height: 25px
+  color: $light-text-color
 
 .map
   width: 347px

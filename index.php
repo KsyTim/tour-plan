@@ -33,7 +33,7 @@
           </div>
           <!-- /.about-hotel-item hotel-rate -->
           <h2 class="hotel-name">grand hilton hotel</h2>
-          <button class="button hotel-advt">Flash Offer</button>
+          <a href="index.php" class="button hotel-advt">Flash Offer</a>
         </div>
         <!-- /.about-hotel-item hotel-description -->
         <div class="about-hotel-item amenities">
@@ -43,10 +43,10 @@
         <!-- /.about-hotel-item amenities -->
       </div>
       <!-- /.hotel-container-item .about-hotel -->
-      <div class="hotel-container-item user-ratings button">
+      <a href="https://www.booking.com/hotel/cn/hilton-sanya-resort-spa.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaMIBiAEBmAEhuAEXyAEP2AEB6AEB-AELiAIBqAIDuALJ2a7-BcACAdICJGFlZGVlY2JkLTM4ODItNGU3Ni04ZDlhLWY2YTQ4NTY5ZjBiMdgCBuACAQ;sid=aea3f3437fe0cf24830dd0a75165359a;dest_id=-1924026;dest_type=city;dist=0;from_beach_non_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1607183575;srpvid=db056fab5fb302bf;type=total;ucfs=1&#hotelTmpl" target="_blank" class="hotel-container-item user-ratings button">
         <span class="user-ratings-item">User Ratings</span>
         <span class="user-ratings-item">4.5/<small>5</small></span>
-      </div>
+      </a>
       <!-- /.hotel-container-item .user-ratings -->
     </div>
     <!-- /.booking-item hotel-container -->
@@ -124,7 +124,7 @@
                 alt="Icon: Book a room by calling"
                 class="call-icon"
               />
-              <span class="call-info">12100</span>
+              <a href="tel:12100" class="call-info">12100</a>
             </div>
             <!-- /.quick-way-item -->
           </div>
@@ -166,7 +166,7 @@
     <h2 class="packages-title">other packages</h2>
     <div class="packages-card-container">
       <div class="packages-card hotel-haven">
-        <button class="button hotel-advt card-hotel-advt">Flash Offer</button>
+        <a href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <img
           src="./img/card-haven.jpg"
           alt="Hotel: Blue Haven"
@@ -216,9 +216,7 @@
                 alt="Icon: Location"
                 class="package-conditions-icon"
               />
-              <span class="package-conditions-info"
-                >1749 Wheeler Ridge Delaware</span
-              >
+              <a href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank" class="package-conditions-info">1749 Wheeler Ridge Delaware</a>
             </div>
             <!-- /.package-conditions-item location -->
             <div class="package-conditions-item guests">
@@ -247,7 +245,7 @@
               <span class="price-new">$ 8,500</span>
             </div>
             <!-- /.booking-price -->
-            <button class="button booking-button">Book Now</button>
+            <button data-toggle="modal" class="button booking-button">Book Now</button>
           </div>
           <!-- /.package-booking -->
         </div>
@@ -260,7 +258,7 @@
           alt="Hotel: LUX* Belle Mare"
           class="card-hotel-pic"
         />
-        <button class="button hotel-advt card-hotel-advt">Flash Offer</button>
+        <a href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">LUX* Belle Mare</h3>
           <div class="package-conditions">
@@ -270,8 +268,8 @@
                 alt="Icon: Location"
                 class="package-conditions-icon"
               />
-              <span class="package-conditions-info"
-                >1749 Wheeler Ridge Delaware</span
+              <a href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank" class="package-conditions-info"
+                >1749 Wheeler Ridge Delaware</a
               >
             </div>
             <!-- /.package-conditions-item location -->
@@ -301,7 +299,7 @@
               <span class="price-new">$ 3,000</span>
             </div>
             <!-- /.booking-price -->
-            <button class="button booking-button">Book Now</button>
+            <button data-toggle="modal" class="button booking-button">Book Now</button>
           </div>
           <!-- /.package-booking -->
         </div>
@@ -314,7 +312,7 @@
           alt="Hotel: White Palace"
           class="card-hotel-pic"
         />
-        <button class="button hotel-advt card-hotel-advt">Flash Offer</button>
+        <a  href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">White Palace</h3>
           <div class="package-conditions">
@@ -324,8 +322,8 @@
                 alt="Icon: Location"
                 class="package-conditions-icon"
               />
-              <span class="package-conditions-info"
-                >1749 Wheeler Ridge Delaware</span
+              <a href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank" class="package-conditions-info"
+                >1749 Wheeler Ridge Delaware</a
               >
             </div>
             <!-- /.package-conditions-item location -->
@@ -355,7 +353,7 @@
               <span class="price-new">$ 9,500</span>
             </div>
             <!-- /.booking-price -->
-            <button class="button booking-button">Book Now</button>
+            <button data-toggle="modal" class="button booking-button">Book Now</button>
           </div>
           <!-- /.package-booking -->
         </div>
@@ -368,7 +366,7 @@
           alt="Hotel: Luxury Place"
           class="card-hotel-pic"
         />
-        <button class="button hotel-advt card-hotel-advt">Flash Offer</button>
+        <a href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">Luxury Place</h3>
           <div class="package-conditions">
@@ -378,8 +376,8 @@
                 alt="Icon: Location"
                 class="package-conditions-icon"
               />
-              <span class="package-conditions-info"
-                >1749 Wheeler Ridge Delaware</span
+              <a href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank" class="package-conditions-info"
+                >1749 Wheeler Ridge Delaware</a
               >
             </div>
             <!-- /.package-conditions-item location -->
@@ -409,7 +407,7 @@
               <span class="price-new">$ 2,500</span>
             </div>
             <!-- /.booking-price -->
-            <button class="button booking-button">Book Now</button>
+            <button data-toggle="modal" class="button booking-button">Book Now</button>
           </div>
           <!-- /.package-booking -->
         </div>
@@ -422,7 +420,7 @@
           alt="Hotel: Five Star"
           class="card-hotel-pic"
         />
-        <button class="button hotel-advt card-hotel-advt">Flash Offer</button>
+        <a href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">Hotel Five Star</h3>
           <div class="package-conditions">
@@ -432,8 +430,8 @@
                 alt="Icon: Location"
                 class="package-conditions-icon"
               />
-              <span class="package-conditions-info"
-                >1749 Wheeler Ridge Delaware</span
+              <a href="https://goo.gl/maps/e8deWpPPBuMu4c4s9" target="_blank" class="package-conditions-info"
+                >1749 Wheeler Ridge Delaware</a
               >
             </div>
             <!-- /.package-conditions-item location -->
@@ -463,7 +461,7 @@
               <span class="price-new">$ 3,500</span>
             </div>
             <!-- /.booking-price -->
-            <button class="button booking-button">Book Now</button>
+            <button data-toggle="modal" class="button booking-button">Book Now</button>
           </div>
           <!-- /.package-booking -->
         </div>
@@ -693,7 +691,7 @@
         />
         <div class="card-info">
           <h3 class="card-title">The curious corner of&nbsp;chamarel</h3>
-          <button class="card-button">Book Now</button>
+          <button data-toggle="modal" class="card-button">Book Now</button>
         </div>
         <!-- /.card-info -->
       </div>
@@ -706,7 +704,7 @@
         />
         <div class="card-info">
           <h3 class="card-title">Gymkhana club golf course</h3>
-          <button class="card-button">Book Now</button>
+          <button data-toggle="modal" class="card-button">Book Now</button>
         </div>
         <!-- /.card-info -->
       </div>
@@ -721,7 +719,7 @@
           <h3 class="card-title">
             Tamarind falls hiking trip&nbsp;-&nbsp;full&nbsp;day
           </h3>
-          <button class="card-button">Book Now</button>
+          <button data-toggle="modal" class="card-button">Book Now</button>
         </div>
         <!-- /.card-info -->
       </div>
@@ -734,7 +732,7 @@
         />
         <div class="card-info">
           <h3 class="card-title">The blue marine discovery quest</h3>
-          <button class="card-button">Book Now</button>
+          <button data-toggle="modal" class="card-button">Book Now</button>
         </div>
         <!-- /.card-info -->
       </div>
