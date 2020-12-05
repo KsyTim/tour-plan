@@ -62,6 +62,7 @@ $(document).ready(function () {
   modalButton.on('click', openModal);
   closeModalButton.on('click', closeModal);
   $(document).on('keydown', closeByButton);
+  $('.modal-overlay').on('click', closeModal);
 
   function openModal() {
     var modalOverlay = $('.modal-overlay');
