@@ -63,9 +63,12 @@
       display: flex
       justify-content: space-between
   &-areas
+    width: 100%
     display: flex
     justify-content: space-between
-    margin-bottom: 14px
+    &-group
+      margin-bottom: 14px
+      flex-basis: 47%
   &-input
     height: 50px
     font-style: normal
@@ -78,9 +81,9 @@
     border-radius: 4px
     +focused-form-elements
     &-name
-      flex-basis: 47%
+      width: 100%
     &-number
-      flex-basis: 47%
+      width: 100%
     &-message
       min-height: 125px
       margin-bottom: 22px
@@ -110,6 +113,11 @@
     font-size: 14px
     line-height: 18px
     margin: 0 0 15px
+  &-invalid
+    color: $button-color
+    font-size: 12px
+    font-family: 'Mulish', sans-serif
+
 .info
   &-features
     height: 22px

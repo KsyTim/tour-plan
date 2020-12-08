@@ -22,12 +22,18 @@
     justify-content: space-between
     align-items: center
     margin: auto
-
   &-info
     display: flex
     flex-direction: column
     align-items: flex-start
     color: $light-text-color
+  &-invalid
+    color: $button-color
+    font-size: 12px
+    font-family: 'Mulish', sans-serif
+    position: absolute
+    bottom: -40%
+    left: 0
 
 .info
   &-text
@@ -47,8 +53,10 @@
   display: flex
   flex-direction: row
   justify-content: center
+  position: relative
 
 #newsletter-input
+  position: relative
   width: 285px
   height: 55px
   font-style: normal

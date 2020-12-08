@@ -6,6 +6,7 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -27,7 +28,7 @@
 
             <form action="#" class="navbar-top-item search-form">
               <input
-                type="text"
+                type="search"
                 placeholder="Search Location"
                 name="search-input"
                 id="search-form-input"
@@ -85,7 +86,7 @@
               <li class="navbar-item search-form-mobile">
                 <form action="#" class="search-form">
                   <input
-                    type="text"
+                    type="search"
                     placeholder="Search Location"
                     name="search-input"
                     id="search-input-mobile"
@@ -120,7 +121,7 @@
               </li>
             </ul>
             <ul class="navbar-hr-container">
-              <li class="hr-container-item hr-mobile--user">
+              <li class="hr-container-item hr-mobile_user">
                 <div class="hr-user-mobile">
                   <a href="index.php" class="user-profile-link">
                     <img
@@ -135,7 +136,7 @@
                 </div>
                 <!-- /.user -->
               </li>
-              <li class="hr-container-item hr-mobile--form">
+              <li class="hr-container-item hr-mobile_form">
                 <form action="#" class="hr-search-form">
                   <input
                     type="text"
@@ -148,44 +149,36 @@
                   </button>
                 </form>
               </li>
-              <li class="hr-container-item hr-mobile--column-first">
-                <ul class="hr-subcontainer">
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link"
-                      >all deals</a
-                    >
+              <li class="hr-container-item hr-mobile_sub">
+                <ul class="hr-mobile_subcontainer">
+                  <li class="hr-mobile_subcontainer-item">
+                  <a href="index.php" class="hr-mobile_subcontainer-link"
+                    >all deals</a
+                  >
                   </li>
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link">hotels</a>
+                  <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link">hotels</a>
                   </li>
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link"
+                  <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link"
                       >activities</a
                     >
                   </li>
-                </ul>
-              </li>
-              <li class="hr-container-item hr-mobile--column-second">
-                <ul class="hr-subcontainer">
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link"
+                    <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link"
                       >hotel&nbsp;day&nbsp;packages</a
                     >
                   </li>
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link"
+                  <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link"
                       >restaurants</a
                     >
                   </li>
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link">events</a>
+                  <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link">events</a>
                   </li>
-                </ul>
-              </li>
-              <li class="hr-container-item hr-mobile--column-third">
-                <ul class="hr-subcontainer">
-                  <li class="hr-subcontainer-item">
-                    <a href="index.php" class="hr-subcontainer-link"
+                  <li class="hr-mobile_subcontainer-item">
+                    <a href="index.php" class="hr-mobile_subcontainer-link"
                       >rodrigues</a
                     >
                   </li>

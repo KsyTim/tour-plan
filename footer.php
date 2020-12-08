@@ -149,7 +149,7 @@
                   class="contacts-icon"
                 />
                 <div class="contacts-details-info">
-                  <a href="tel:269 1500" class="contacts-details-link"
+                  <a href="tel:2691500" class="contacts-details-link"
                     >Tel (business hours) : 269 1500</a
                   >
                   <a href="tel:52-56-61-38" class="contacts-details-link"
@@ -185,18 +185,26 @@
             <h3 class="footer-card-title feedback-title">send us message</h3>
             <form action="send.php" method="POST" class="feedback-form">
               <div class="feedback-areas">
-                <input
+                <div class="feedback-areas-group">
+                  <input
                   type="text"
                   placeholder="Your Full Name*"
                   class="feedback-input feedback-input-name"
                   name="input-name"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number*"
-                  class="feedback-input feedback-input-number"
-                  name="input-number"
-                />
+                  minlength="2"
+                  required
+                  />
+                </div>
+                <div class="feedback-areas-group">
+                  <input
+                    type="tel"
+                    placeholder="Phone Number*"
+                    class="feedback-input feedback-input-number"
+                    name="input-number"
+                    minlength="12"
+                    required
+                  />
+                </div>  
               </div>
               <textarea
                 name="feedback-message"
@@ -276,18 +284,23 @@
                 placeholder="Your Full Name*"
                 class="modal-window-input modal-window-input-name"
                 name="modal-window-name"
+                minlength="2"
+                required
               />
               <input
                 type="tel"
                 placeholder="Phone Number*"
                 class="modal-window-input modal-window-input-number"
                 name="modal-window-number"
+                minlength="12"
+                required
               />
               <input
-                type="tel"
+                type="email"
                 placeholder="Email*"
                 class="modal-window-input modal-window-input-email"
                 name="modal-window-email"
+                required
               />
             </div>
             <textarea
@@ -316,8 +329,12 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=06e6d0df-892f-4500-854c-4b40db30a38a&lang=en_US"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>    
   </body>
 </html>

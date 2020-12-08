@@ -47,11 +47,11 @@ function sendMessage($title,$body){
 
         // Настройки вашей почты
         $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-        $mail->Username   = ''; // Логин на почте
-        $mail->Password   = ''; // Пароль на почте
+        $mail->Username   = 'kseniia.timoshenko.0220@gmail.com'; // Логин на почте
+        $mail->Password   = '@choOl55'; // Пароль на почте
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-        $mail->setFrom('', ''); // Адрес самой почты и имя отправителя
+        $mail->setFrom('kseniia.timoshenko.0220@gmail.com', 'Kseniia Timoshenko'); // Адрес самой почты и имя отправителя
         // Получатель письма
         $mail->addAddress('timoshenko.ksenia.1998@gmail.com');  
         // Отправка сообщения

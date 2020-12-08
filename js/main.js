@@ -2,7 +2,10 @@ $(document).ready(function () {
   var hotelSwiper = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
-    speed: 1000,
+    effect: 'fade',
+    autoplay: {
+      delay: 2000,
+    },
 
     // Navigation arrows
     navigation: {
@@ -15,10 +18,24 @@ $(document).ready(function () {
     },
   });
 
+  $('.hotel-slider').on({
+    mouseenter: function () {
+      console.log('stop hotel-slider autoplay');
+      hotelSwiper.autoplay.stop();
+    },
+    mouseleave: function () {
+      console.log('start hotel-slider autoplay');
+      hotelSwiper.autoplay.start();
+    }
+  });
+  
   var reviewsSwiper = new Swiper('.reviews-slider', {
-    // Optional parameters
+    // Optional parameters 
     loop: true,
-    speed: 1000,
+    effect: 'fade',
+    autoplay: {
+      delay: 2000,
+    },
 
     // Navigation arrows
     navigation: {
@@ -27,26 +44,37 @@ $(document).ready(function () {
     },
 
     keyboard: {
-      enabled: false,
+      enabled: true,
     },
   });
-
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [18.440072583306193, 110.01730095614566],
-      zoom: 10
+  $('.reviews-slider').on({
+    mouseenter: function () {
+      console.log('stop reviews-slider autoplay');
+      reviewsSwiper.autoplay.stop();
     },
-    ),
-      myGeoObject = new ymaps.GeoObject({
-        geometry: {
-          type: "Point",
-          coordinates: [18.45, 110.02]
-        },
-      });
-    myMap.geoObjects.add(myGeoObject);
+    mouseleave: function () {
+      console.log('start reviews-slider autoplay');
+      reviewsSwiper.autoplay.start();
+    }
+  });
+
+
+  // ymaps.ready(init);
+  // function init() {
+  //   var myMap = new ymaps.Map("map", {
+  //     center: [18.440072583306193, 110.01730095614566],
+  //     zoom: 10
+  //   },
+  //   ),
+  //     myGeoObject = new ymaps.GeoObject({
+  //       geometry: {
+  //         type: "Point",
+  //         coordinates: [18.45, 110.02]
+  //       },
+  //     });
+  //   myMap.geoObjects.add(myGeoObject);
   
-  }
+  // }
 
   // $('.newsletter').parallax({
   //   speed: 0.8,
@@ -88,8 +116,53 @@ $(document).ready(function () {
       modalOverlay.removeClass('modal-overlay--visible');
       modalWindow.removeClass('modal-window--visible');
     } else {
-    false;
-    }  
-  } 
+      false;
+    }
+  }
 
+  $(".newsletter-form").validate({
+    errorClass: "newsletter-invalid",
+    messages: {
+      'subscription-input': {
+        required: "Please enter your email to contact you",
+        email: "Email address format eхample name@domain.com"
+      },
+    },
+  });
+
+  $(".feedback-form").validate({
+    errorClass: "feedback-invalid",
+    messages: {
+      'input-name': {
+        required: "Please enter your name",
+        minlength: "Your name must contain more than one letter"
+      },
+      'input-number': {
+        required: "Please enter your phone number",
+        minlength: "Your phone number must contain at least 11 digits"
+      },
+    },
+  });
+
+  $(".modal-window-form").validate({
+    errorClass: "invalid",
+    messages: {
+      'modal-window-name': {
+        required: "Please enter your name",
+        minlength: "Your name must contain more than one letter"
+      },
+      'modal-window-number': {
+        required: "Please enter your phone number",
+        minlength: "Your phone number must contain at least 11 digits"
+      },
+      'modal-window-email': {
+        required: "Please enter your email to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+    },
+  });
+
+  $("input[type='tel']").mask('+7(999) 999-99-99', { clearIfNotMatch: true }); 
+  
+  AOS.init();
 });

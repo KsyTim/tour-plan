@@ -43,7 +43,7 @@
         <!-- /.about-hotel-item amenities -->
       </div>
       <!-- /.hotel-container-item .about-hotel -->
-      <a href="https://www.booking.com/hotel/cn/hilton-sanya-resort-spa.ru.html?label=gen173nr-1FCAEoggI46AdIM1gEaMIBiAEBmAEhuAEXyAEP2AEB6AEB-AELiAIBqAIDuALJ2a7-BcACAdICJGFlZGVlY2JkLTM4ODItNGU3Ni04ZDlhLWY2YTQ4NTY5ZjBiMdgCBuACAQ;sid=aea3f3437fe0cf24830dd0a75165359a;dest_id=-1924026;dest_type=city;dist=0;from_beach_non_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1607183575;srpvid=db056fab5fb302bf;type=total;ucfs=1&#hotelTmpl" target="_blank" class="hotel-container-item user-ratings button">
+      <a href="https://www.booking.com/hotel/cn/hilton-sanya-resort-spa.ru.html#tab-reviews" target="_blank" class="hotel-container-item user-ratings button">
         <span class="user-ratings-item">User Ratings</span>
         <span class="user-ratings-item">4.5/<small>5</small></span>
       </a>
@@ -139,7 +139,7 @@
         <!-- /.about-booking-item -->
         <div id="map" class="about-booking-item map">
           <!-- Google Maps -->
-          <!-- <iframe
+          <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196633.02593789363!2d109.63429622953358!3d18.21957085699653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x315ab6e7bfc4c943%3A0x22f9a008cc972a18!2sHilton%20Sanya%20Yalong%20Bay%20Resort%20%26%20Spa!5e0!3m2!1sru!2sru!4v1606243684757!5m2!1sru!2sru"
                 width="100%"
                 height="213"
@@ -149,7 +149,7 @@
                 aria-hidden="false"
                 tabindex="0"
                 class="map-item"
-        ></iframe> -->
+        ></iframe>
         </div>
         <!-- /.about-booking-item -->
       </div>
@@ -165,7 +165,7 @@
   <div class="wrapper">
     <h2 class="packages-title">other packages</h2>
     <div class="packages-card-container">
-      <div class="packages-card hotel-haven">
+      <div class="packages-card hotel-haven" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <a href="index.php" class="button hotel-advt card-hotel-advt">Flash Offer</a>
         <img
           src="./img/card-haven.jpg"
@@ -252,7 +252,7 @@
         <!-- /.package-card-info -->
       </div>
       <!-- /.packeges-card hotel-haven -->
-      <div class="packages-card hotel-mare">
+      <div class="packages-card hotel-mare" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <img
           src="./img/card-mare.jpg"
           alt="Hotel: LUX* Belle Mare"
@@ -306,7 +306,7 @@
         <!-- /.package-card-info -->
       </div>
       <!-- /.packeges-card hotel-mare -->
-      <div class="packages-card hotel-palace">
+      <div class="packages-card hotel-palace" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <img
           src="./img/card-palace.jpg"
           alt="Hotel: White Palace"
@@ -360,7 +360,7 @@
         <!-- /.package-card-info -->
       </div>
       <!-- /.packeges-card hotel-palace-->
-      <div class="packages-card hotel-place">
+      <div class="packages-card hotel-place" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
         <img
           src="./img/card-place.jpg"
           alt="Hotel: Luxury Place"
@@ -414,7 +414,7 @@
         <!-- /.package-card-info -->
       </div>
       <!-- /.packeges-card hotel-place-->
-      <div class="packages-card hotel-star">
+      <div class="packages-card hotel-star" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
         <img
           src="./img/card-star.jpg"
           alt="Hotel: Five Star"
@@ -488,20 +488,24 @@
       </div>
       <!-- /.newsletter-info -->
       <form action="send.php" method="POST" class="newsletter-form">
-        <input
-          type="text"
-          placeholder="Your email address"
-          name="subscription-input"
-          id="newsletter-input"
-        />
-        <button
-          class="button newsletter-button"
-          type="submit"
-          value="subscribe"
-          name="action"
-        >
-          Send
-        </button>
+      
+          <input
+            type="email"
+            placeholder="Your email address"
+            name="subscription-input"
+            id="newsletter-input"
+            pattern="[\w.+-]{2,}@[\w-]{2,}([\.][a-zA-Z]{2,})$"
+            required
+          />
+
+          <button
+            class="button newsletter-button"
+            type="submit"
+            value="subscribe"
+            name="action"
+          >
+            Send
+          </button>
       </form>
     </div>
     <!-- /.wrapper -->
@@ -683,7 +687,7 @@
   <div class="wrapper">
     <h2 class="activities-item activities-title">other activities</h2>
     <div class="activities-item activities-container">
-      <div class="activities-container-item card">
+      <div class="activities-container-item card" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <img
           src="./img/activities-bg-01.jpg"
           alt="The curious corner of chamarel"
@@ -696,7 +700,7 @@
         <!-- /.card-info -->
       </div>
       <!-- /.activities-container-item card -->
-      <div class="activities-container-item card">
+      <div class="activities-container-item card" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
         <img
           src="./img/activities-bg-02.jpg"
           alt="Gymkhana club golf course"
@@ -709,7 +713,7 @@
         <!-- /.card-info -->
       </div>
       <!-- /.activities-container-item card -->
-      <div class="activities-container-item card">
+      <div class="activities-container-item card" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <img
           src="./img/activities-bg-03.jpg"
           alt="Tamarind falls hiking trip - full da"
@@ -724,7 +728,7 @@
         <!-- /.card-info -->
       </div>
       <!-- /.activities-container-item card -->
-      <div class="activities-container-item card">
+      <div class="activities-container-item card" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
         <img
           src="./img/activities-bg-04.jpg"
           alt="The blue marine discovery quest"
