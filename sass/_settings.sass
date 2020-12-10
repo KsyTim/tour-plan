@@ -20,7 +20,6 @@ body
 =hover-form-elements
   &:hover
     background-color: $hover-button-color
-    // box-shadow: 2px 4px 5px #52779e
 
 =focused-buttons
   &:active
@@ -33,7 +32,7 @@ body
 
 =slider-arrows
   position: absolute
-  top: 50%
+  top: 48%
   z-index: 50
   width: 30px
   height: 30px
@@ -41,6 +40,35 @@ body
   cursor: pointer
   background: transparent no-repeat center
   outline: none
+
+=box-shadow-dark
+  &:hover
+    box-shadow: 2px 4px 10px $box-shadow-darkcolor
+
+=box-shadow-light
+  &:hover
+    box-shadow: 1px 1px 5px $box-shadow-lightcolor
+
+=min-boxshadow-dark
+  &:hover
+    box-shadow: 1px 1px 5px $box-shadow-darkcolor
+
+=hover-button-off
+  &:hover
+    box-shadow: none
+    background-color: $button-color
+
+=hover-card-off
+  &:hover
+    box-shadow: none
+
+=hover-darklink-off
+  &:hover
+    color: $light-text-color
+
+=hover-lightlink-off
+  &:hover
+    color: $input-color
 
 a
   text-decoration: none

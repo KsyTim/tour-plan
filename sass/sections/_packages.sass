@@ -7,7 +7,8 @@
       &-card
         &-info
           width: 50%
-          height: 100%
+          height: 100% !important
+          overflow-y: auto
           background-color: $dark-bgcolor
           position: absolute
           right: 0
@@ -15,11 +16,15 @@
           z-index: 55
           color: $light-text-color
           border-radius: 0px 8px 8px 0px
-          padding: 46px 21px 28px 43px
+          padding: 36px 20px 28px 45px
       &-conditions
-        margin-bottom: 24px !important
+        margin-bottom: 37px !important
+        &-icon
+          margin-right: 17px
     .card
       &-hotel
+        &-name
+          margin: 0 0 27px !important
         &-pic
           position: relative
           width: 55%
@@ -30,15 +35,22 @@
         &-advt
           position: absolute
           left: 0
-          top: 26px
+          top: 26px !important
           width: 95px
-          height: 30px
+          min-height: 30px !important
           padding: 8px 12px 7px 11px
           font-size: 12px
           line-height: 15px
           font-weight: 600
           margin: 0
           border-radius: 0px 4px 4px 0px
+    .booking-button
+      align-self: flex-end
+    .price
+      &-old
+        font-size: 15px
+      &-new
+        font-size: 25px
   &-mare
     grid-area: mare
     position: relative
@@ -79,7 +91,8 @@
   &-card
     &-info
       width: 350px
-      min-height: 250px
+      height: 250px
+      overflow-y: auto
       background-color: $dark-bgcolor
       position: absolute
       right: 0
@@ -87,13 +100,13 @@
       z-index: 55
       color: $light-text-color
       border-radius: 0px 0px 8px 8px
-      padding: 30px 21px 30px 32px
+      padding: 30px 21px 25px 32px
   &-conditions
     display: flex
     flex-direction: column
     width: 210px
     height: 67px
-    margin-bottom: 24px !important
+    margin-bottom: 23px !important
     &-item
       display: flex
       align-items: center
@@ -127,15 +140,16 @@
     &-advt
       position: absolute
       left: 0
-      top: 30px
+      top: 27px
       width: 60px
-      height: 18px
+      min-height: 18px
       padding: 4px 9px
       font-size: 8px
       font-weight: 600
       line-height: 10px
       margin: 0
       border-radius: 0px 4px 4px 0px
+      +box-shadow-light
     &-rate
       margin-bottom: 5px
     &-name
@@ -143,20 +157,25 @@
       font-weight: bold
       font-size: 18px
       line-height: 23px
-      margin: 0 0 27px
+      margin: 0 0 25px
     &-description
+      max-height: 216px
+      overflow-y: auto
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 22px
-      margin: 0 0 53px
+      margin: 0 0 45px
 
 .booking
   &-price
     display: flex
     flex-direction: column
     justify-content: flex-start
+    align-self: flex-start
+    margin-top: 0
   &-button
+    max-width: 125px
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -166,9 +185,11 @@
     background-color: $button-color
     color: $light-text-color
     border-radius: 4px
+    margin-top: 18px
     +focused-form-elements
     +hover-form-elements
     +focused-buttons
+    +box-shadow-light
 
 .price
   &-old

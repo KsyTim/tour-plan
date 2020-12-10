@@ -152,6 +152,7 @@ $(document).ready(function () {
         minlength: "Your name must contain more than one letter"
       },
       'modal-window-number': {
+        onkeyup: false,
         required: "Please enter your phone number",
         minlength: "Your phone number must contain at least 11 digits"
       },
@@ -162,7 +163,7 @@ $(document).ready(function () {
     },
   });
 
-  $("input[type='tel']").mask('+7(999) 999-99-99', { clearIfNotMatch: true }); 
+  $('input[type="tel"]').mask('+7(000) 000-00-00');  
   
   AOS.init();
 });

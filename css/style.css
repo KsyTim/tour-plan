@@ -360,8 +360,7 @@ template {
 .navbar-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 0;
+  padding: 38px 0;
 }
 
 .navbar-top-item:last-child {
@@ -369,21 +368,22 @@ template {
 }
 
 .logo-img {
-  width: 177px;
+  width: 178px;
 }
 
 .search-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 33% 0 10%;
 }
 
 #search-form-input {
-  width: 285px;
+  width: 282px;
   height: 40px;
   font-size: 12px;
   line-height: 15px;
-  padding-left: 23px;
+  padding-left: 20px;
   background-color: #F5FAFE;
   border-radius: 6px 0 0 6px;
   border: none;
@@ -396,7 +396,7 @@ template {
 .search-icon {
   display: inline-block;
   vertical-align: middle;
-  width: 65px;
+  width: 66px;
   height: 40px;
   background-color: #EC1F46;
   border-radius: 0 6px 6px 0;
@@ -478,6 +478,10 @@ template {
   color: #FFFFFF;
 }
 
+.navbar-item-link:hover {
+  color: #cccccc;
+}
+
 .bread-crumb {
   display: flex;
   align-items: center;
@@ -513,7 +517,7 @@ template {
 
 .hotel-name {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 20px;
   text-transform: uppercase;
   margin: 4px 0 2px;
 }
@@ -529,33 +533,15 @@ template {
   line-height: 13px;
 }
 
-.hotel-advt-sub {
-  width: 70px;
-  height: 20px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 13px;
-  color: #FFFFFF;
-  background-color: #EC1F46;
-  text-transform: uppercase;
-}
-
-.hotel-advt-sub:active {
-  background-color: #e95974;
-  transition: all .9s;
-}
-
-.hotel-advt-sub:hover {
-  background-color: #C91537;
+.hotel-advt:hover {
+  box-shadow: 1px 1px 5px #4d4d4d;
 }
 
 .hotel-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 23px 0 20px;
+  padding: 18px 0 17px;
 }
 
 .hotel-slider {
@@ -590,7 +576,7 @@ template {
   background-color: transparent;
   margin-top: -15px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   z-index: 50;
   width: 30px;
   height: 30px;
@@ -601,11 +587,13 @@ template {
 }
 
 .hotel-slider-prev {
+  top: 51% !important;
   left: 18px;
   background-image: url(../img/slider-arrow-left.svg);
 }
 
 .hotel-slider-next {
+  top: 51% !important;
   right: 18px;
   background-image: url(../img/slider-arrow-right.svg);
 }
@@ -649,19 +637,27 @@ template {
   line-height: 19px;
 }
 
+.button-book-info:hover {
+  box-shadow: 1px 1px 5px #ffb3b3;
+}
+
 .amenities {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 20px;
 }
 
 .user-ratings {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  width: 65px;
-  height: 48px;
+  max-width: 65px;
+  min-height: 45px;
   border-radius: 4px;
-  padding: 9px 6px 6px;
+  padding: 9px 8px 6px;
+}
+
+.user-ratings:hover {
+  box-shadow: 1px 1px 5px #4d4d4d;
 }
 
 .user-ratings-item:first-child {
@@ -685,7 +681,7 @@ template {
   display: flex;
   flex-direction: column;
   width: 350px;
-  min-height: 210px;
+  min-height: 211px;
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -714,8 +710,8 @@ template {
 .price-main {
   display: flex;
   flex-direction: column;
-  width: 86px;
-  height: 59px;
+  min-width: 86px;
+  min-height: 59px;
 }
 
 .price-start {
@@ -731,7 +727,7 @@ template {
 
 .price-end {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 10px;
 }
 
 .price-conditions {
@@ -789,6 +785,10 @@ template {
   border-radius: 10px;
 }
 
+.map iframe {
+  width: 100%;
+}
+
 .hotel-haven {
   height: 500px;
   grid-area: haven;
@@ -797,7 +797,8 @@ template {
 
 .hotel-haven .package-card-info {
   width: 50%;
-  height: 100%;
+  height: 100% !important;
+  overflow-y: auto;
   background-color: #0A223D;
   position: absolute;
   right: 0;
@@ -805,11 +806,19 @@ template {
   z-index: 55;
   color: #FFFFFF;
   border-radius: 0px 8px 8px 0px;
-  padding: 46px 21px 28px 43px;
+  padding: 36px 20px 28px 45px;
 }
 
 .hotel-haven .package-conditions {
-  margin-bottom: 24px !important;
+  margin-bottom: 37px !important;
+}
+
+.hotel-haven .package-conditions-icon {
+  margin-right: 17px;
+}
+
+.hotel-haven .card-hotel-name {
+  margin: 0 0 27px !important;
 }
 
 .hotel-haven .card-hotel-pic {
@@ -824,15 +833,27 @@ template {
 .hotel-haven .card-hotel-advt {
   position: absolute;
   left: 0;
-  top: 26px;
+  top: 26px !important;
   width: 95px;
-  height: 30px;
+  min-height: 30px !important;
   padding: 8px 12px 7px 11px;
   font-size: 12px;
   line-height: 15px;
   font-weight: 600;
   margin: 0;
   border-radius: 0px 4px 4px 0px;
+}
+
+.hotel-haven .booking-button {
+  align-self: flex-end;
+}
+
+.hotel-haven .price-old {
+  font-size: 15px;
+}
+
+.hotel-haven .price-new {
+  font-size: 25px;
 }
 
 .hotel-mare {
@@ -889,7 +910,8 @@ template {
 
 .package-card-info {
   width: 350px;
-  min-height: 250px;
+  height: 250px;
+  overflow-y: auto;
   background-color: #0A223D;
   position: absolute;
   right: 0;
@@ -897,7 +919,7 @@ template {
   z-index: 55;
   color: #FFFFFF;
   border-radius: 0px 0px 8px 8px;
-  padding: 30px 21px 30px 32px;
+  padding: 30px 21px 25px 32px;
 }
 
 .package-conditions {
@@ -905,7 +927,7 @@ template {
   flex-direction: column;
   width: 210px;
   height: 67px;
-  margin-bottom: 24px !important;
+  margin-bottom: 23px !important;
 }
 
 .package-conditions-item {
@@ -949,15 +971,19 @@ template {
 .card-hotel-advt {
   position: absolute;
   left: 0;
-  top: 30px;
+  top: 27px;
   width: 60px;
-  height: 18px;
+  min-height: 18px;
   padding: 4px 9px;
   font-size: 8px;
   font-weight: 600;
   line-height: 10px;
   margin: 0;
   border-radius: 0px 4px 4px 0px;
+}
+
+.card-hotel-advt:hover {
+  box-shadow: 1px 1px 5px #ffb3b3;
 }
 
 .card-hotel-rate {
@@ -969,24 +995,29 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin: 0 0 27px;
+  margin: 0 0 25px;
 }
 
 .card-hotel-description {
+  max-height: 216px;
+  overflow-y: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
-  margin: 0 0 53px;
+  margin: 0 0 45px;
 }
 
 .booking-price {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-self: flex-start;
+  margin-top: 0;
 }
 
 .booking-button {
+  max-width: 125px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -996,6 +1027,7 @@ template {
   background-color: #EC1F46;
   color: #FFFFFF;
   border-radius: 4px;
+  margin-top: 18px;
   border: none;
 }
 
@@ -1010,6 +1042,10 @@ template {
 .booking-button:active {
   background-color: #e95974;
   transition: all .9s;
+}
+
+.booking-button:hover {
+  box-shadow: 1px 1px 5px #ffb3b3;
 }
 
 .price-old {
@@ -1144,7 +1180,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px;
+  padding: 40px 0 71px;
 }
 
 .reviews-title {
@@ -1153,13 +1189,13 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 70px;
+  margin: 0 0 58px;
 }
 
 .reviews-slider-item {
   position: relative;
   max-width: 731px;
-  margin: 45px auto 0;
+  margin: 57px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1179,9 +1215,9 @@ template {
 }
 
 .reviews-slider-item::after {
-  width: 70px;
+  width: 71px;
   height: 47px;
-  top: 119px;
+  top: 118px;
   right: 60px;
   background: url("../img/quote-mark-right.svg") no-repeat;
   content: '';
@@ -1191,7 +1227,7 @@ template {
 .reviews-slide-prev, .reviews-slide-next {
   transform: translateY(-50%);
   position: absolute;
-  top: 50%;
+  top: 48%;
   z-index: 50;
   width: 30px;
   height: 30px;
@@ -1202,12 +1238,12 @@ template {
 }
 
 .reviews-slide-prev {
-  left: 0;
+  left: 18px;
   background-image: url(../img/reviews-arrow-left.svg);
 }
 
 .reviews-slide-next {
-  right: 0;
+  right: 18px;
   background-image: url(../img/reviews-arrow-right.svg);
 }
 
@@ -1215,7 +1251,7 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -45px 0 32px;
+  margin: -57px 0 31px;
 }
 
 .user-profile-photo {
@@ -1223,7 +1259,7 @@ template {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: -3px;
 }
 
 .user-profile-name {
@@ -1287,6 +1323,10 @@ template {
 .activities-container-item {
   display: flex;
   flex-direction: column;
+}
+
+.activities-container-item:hover {
+  box-shadow: 2px 4px 10px #4d4d4d;
 }
 
 .card {
@@ -1359,10 +1399,14 @@ template {
   background-color: #C91537;
 }
 
+.card-button:hover {
+  box-shadow: 1px 1px 5px #ffb3b3;
+}
+
 .vr-logo {
   grid-area: vr-logo;
-  width: 150px;
-  height: 165px;
+  width: 153px;
+  height: 174px;
   margin-top: 30px;
 }
 
@@ -1384,6 +1428,7 @@ template {
   min-height: 127px;
   align-self: start;
   justify-self: end;
+  margin-right: 5px;
 }
 
 .socials {
@@ -1395,7 +1440,8 @@ template {
 
 .contacts {
   grid-area: contacts;
-  align-self: center;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
 .contacts-title {
@@ -1403,7 +1449,7 @@ template {
 }
 
 .contacts-info {
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 }
 
 .contacts-details-item {
@@ -1423,6 +1469,10 @@ template {
   font-size: 14px;
   line-height: 22px;
   color: #BDBDBD;
+}
+
+.contacts-details-link:hover {
+  color: #FFFFFF;
 }
 
 .contacts-phone {
@@ -1524,8 +1574,14 @@ template {
   outline: none;
 }
 
+.feedback-button:hover {
+  box-shadow: 1px 1px 5px #ffb3b3;
+}
+
 .feedback-required-element {
   color: #E0E0E0;
+  align-self: flex-start;
+  margin-top: 20px;
 }
 
 .feedback-accept {
@@ -1563,19 +1619,23 @@ template {
   color: #FFFFFF;
 }
 
+.info-section-item:hover {
+  color: #cccccc;
+}
+
 .footer-section {
   background-color: #0A223D;
   padding: 108px 0 46px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 11px;
   color: #BDBDBD;
 }
 
 .footer-card-container {
   display: grid;
-  grid-template: 195px 119px 120px min-content 116px/repeat(4, 1fr);
+  grid-template: minmax(auto, 195px) 119px 120px min-content 116px/repeat(4, 1fr);
   column-gap: 30px;
   grid-template-areas: "vr-logo categories additions legacy" "vr-logo categories socials socials" "contacts contacts feedback feedback" "contacts contacts feedback feedback" "footer-subinfo footer-subinfo footer-subinfo info-features";
 }
@@ -1586,7 +1646,7 @@ template {
   font-size: 18px;
   line-height: 23px;
   text-transform: uppercase;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   color: #FFFFFF;
 }
 
@@ -1612,12 +1672,24 @@ template {
   color: #FFFFFF;
 }
 
+.footer-title-link {
+  color: #FFFFFF;
+}
+
+.footer-title-link:hover {
+  color: #cccccc;
+}
+
 .card-list-link {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
   color: #BDBDBD;
+}
+
+.card-list-link:hover {
+  color: #FFFFFF;
 }
 
 .social-title {
@@ -1791,6 +1863,9 @@ template {
   .wrapper {
     max-width: 960px;
   }
+  .search-form {
+    margin: 0 24% 0 10%;
+  }
   .hotel-slider {
     width: 585px;
   }
@@ -1809,7 +1884,7 @@ template {
   }
   .hotel-haven .card-hotel-info {
     width: 50%;
-    right: 0;
+    right: 1px;
   }
   .hotel-haven .card-hotel-name {
     margin: 0 0 15px;
@@ -1886,13 +1961,19 @@ template {
     width: 275px;
   }
   .navbar-top {
-    padding: 30px 0;
+    padding: 29px 0;
   }
   .navbar-item {
     font-size: 12px;
   }
+  .navbar-item-link:hover {
+    color: #FFFFFF;
+  }
   .navbar-sub {
-    padding: 22px 0;
+    padding: 21px 15px;
+  }
+  .search-form {
+    margin: 0 10% 0 7%;
   }
   .hotel-slider {
     width: 700px;
@@ -1901,11 +1982,24 @@ template {
   .hotel-slider-item {
     width: 100%;
   }
+  .hotel-slider-prev, .hotel-slider-next {
+    top: 51%;
+  }
+  .hotel-slider-prev {
+    left: 16px;
+  }
+  .hotel-slider-next {
+    right: 16px;
+  }
+  .hotel-container {
+    padding: 18px 0 14px;
+  }
   .book-hotel {
     flex-direction: column;
   }
   .book-info {
     width: 340px;
+    padding: 32px 22px 26px 24px;
   }
   .map {
     width: 340px;
@@ -1919,10 +2013,19 @@ template {
   .reviews-title {
     font-size: 30px;
     line-height: 38px;
-    margin: 0 0 50px;
+    margin: 0 0 39px;
   }
   .reviews-slider-item {
     max-width: 579px;
+  }
+  .reviews-slide-prev, .reviews-slide-next {
+    top: 52%;
+  }
+  .reviews-slide-prev {
+    left: 0;
+  }
+  .reviews-slide-next {
+    right: 0;
   }
   .user-review {
     max-width: 455px;
@@ -1934,6 +2037,9 @@ template {
     flex-flow: row wrap;
     align-items: flex-start;
   }
+  .activities-container-item:hover {
+    box-shadow: none;
+  }
   .card {
     width: 339px;
     height: 255px;
@@ -1943,7 +2049,7 @@ template {
   }
   .hotel-haven .package-card-info {
     width: 50%;
-    right: 0;
+    right: 1px;
   }
   .hotel-haven .package-conditions {
     margin-bottom: 37px !important;
@@ -1973,7 +2079,7 @@ template {
   .package-card-info {
     width: 340px;
     right: 0;
-    padding: 30px 21px 30px 32px;
+    padding: 30px 21px 25px 32px;
   }
   .package-conditions {
     margin-bottom: 24px !important;
@@ -1984,8 +2090,20 @@ template {
   .card-name-description {
     margin: 0 0 34px;
   }
+  .card-list-link:hover {
+    color: #BDBDBD;
+  }
+  .card-title {
+    max-width: 200px;
+  }
+  .newsletter {
+    padding: 92px 0;
+  }
+  .newsletter-container {
+    width: 100%;
+  }
   .vr-logo {
-    width: 105px;
+    width: 96px;
     height: 100%;
     margin: 0;
   }
@@ -1993,20 +2111,67 @@ template {
     padding: 73px 0 33px;
   }
   .footer-card-container {
-    grid-template: 110px 223px min-content min-content 55px/repeat(3, 1fr);
-    grid-gap: 55px 30px;
+    grid-template: min-content min-content min-content min-content 55px/ 156px 262px 1fr;
+    grid-gap: 50px 30px;
     grid-template-areas: "vr-logo socials socials" "categories additions legacy" "contacts contacts contacts" "feedback feedback feedback" "footer-subinfo footer-subinfo info-features";
   }
   .footer-subinfo {
-    margin: 0;
+    margin: 14px 0 0;
     align-self: flex-start;
     justify-self: self-start;
+  }
+  .footer-title-link:hover {
+    color: #FFFFFF;
+  }
+  .additions {
+    justify-self: end;
+  }
+  .legacy {
+    margin-right: 12px;
   }
   .socials {
     align-self: center;
   }
   .info-features {
     align-self: flex-start;
+    margin-top: 5px;
+  }
+  .info-section-item:hover {
+    color: #FFFFFF;
+  }
+  .button:hover {
+    box-shadow: none;
+    background-color: #EC1F46;
+  }
+  .button-book-info:hover {
+    box-shadow: none;
+    background-color: #EC1F46;
+  }
+  .user-ratings:hover {
+    box-shadow: none;
+    background-color: #EC1F46;
+  }
+  .contacts-details-item {
+    margin-bottom: 21px;
+  }
+  .contacts-details-link:hover {
+    color: #BDBDBD;
+  }
+  .contacts-details .contacts-email {
+    margin: 0;
+  }
+  .contacts-title {
+    margin-bottom: 29px !important;
+  }
+  .feedback {
+    width: 77%;
+    margin-top: 12px;
+  }
+  .feedback-title {
+    margin-bottom: 33px !important;
+  }
+  .feedback-required-element {
+    font-size: 12px;
   }
 }
 
@@ -2017,7 +2182,15 @@ template {
   .wrapper {
     max-width: 620px;
   }
-  .navbar-top-item:nth-child(n+2), .header-sub {
+  .header-sub {
+    display: none;
+  }
+  .navbar-top {
+    align-items: unset;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+  .navbar-top-item:nth-child(n+2) {
     display: none;
   }
   .navbar-top-item:last-child {
@@ -2072,7 +2245,7 @@ template {
     width: 300px;
   }
   .newsletter-container {
-    width: 520px;
+    width: 100%;
   }
   .info-text {
     font-size: 20px;
@@ -2085,8 +2258,12 @@ template {
   #newsletter-input {
     width: 215px;
   }
+  .reviews {
+    padding: 40px 0 57px;
+  }
   .reviews-slider-item {
     max-width: 450px;
+    padding: 13px 60px 33px 64px;
   }
   .user-review {
     max-width: 400px;
@@ -2105,7 +2282,7 @@ template {
     margin-bottom: 20px;
   }
   .hotel-haven .package-card-info {
-    right: 0;
+    right: 1px;
   }
   .hotel-haven .package-conditions {
     margin-bottom: 20px !important;
@@ -2127,7 +2304,10 @@ template {
     right: 0;
   }
   .footer-card-container {
+    display: grid;
     grid-gap: 55px 20px;
+    grid-template: min-content min-content min-content min-content 55px/repeat(3, 1fr);
+    grid-template-areas: "vr-logo socials socials" "categories additions legacy" "contacts contacts contacts" "feedback feedback feedback" "footer-subinfo footer-subinfo info-features";
   }
   .footer-card-title {
     font-size: 16px;
@@ -2234,7 +2414,7 @@ template {
     margin: 0 0 57px 25px;
   }
   .hotel-haven .package-card-info {
-    right: 0;
+    right: 1px;
     padding: 25px 22px;
   }
   .hotel-haven .package-conditions {
@@ -2284,11 +2464,21 @@ template {
     align-self: flex-start;
     justify-self: self-start;
   }
+  .footer-section {
+    line-height: 18px;
+  }
   .social-title {
     margin: 0 0 20px;
   }
   .social-nets {
     margin: 0;
+  }
+  .additions {
+    justify-self: start;
+  }
+  .feedback {
+    width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -2334,7 +2524,7 @@ template {
     line-height: 24px;
   }
   .price-main {
-    width: 75px;
+    min-width: 75px;
   }
   .price-cost {
     font-size: 18px;
@@ -2398,7 +2588,7 @@ template {
   }
   .hotel-haven .package-card-info {
     width: 100%;
-    height: 55%;
+    height: 55% !important;
     padding: 30px 21px 30px 32px;
     border-radius: 0px 0px 8px 8px;
   }
@@ -2424,8 +2614,8 @@ template {
   }
   .package-card-info {
     width: 100%;
-    min-height: 50%;
-    padding: 30px 21px 30px 32px;
+    height: 50%;
+    padding: 30px 21px 25px 32px;
   }
   .package-conditions {
     width: 210px;
@@ -2471,7 +2661,7 @@ template {
     grid-area: footer-sub;
   }
   .footer-card-container {
-    grid-template: 125px 63px 127px 171px min-content min-content min-content min-content/ 100%;
+    grid-template: repeat(8, min-content)/100%;
     row-gap: 30px;
     column-gap: 0;
     grid-template-areas: "vr-logo" "socials" "legacy" "additions" "categories" "contacts" "feedback" "footer-sub";
@@ -2539,21 +2729,21 @@ template {
     margin-bottom: 20px;
   }
   .price-main {
-    width: 86px;
+    min-width: 86px;
   }
-  -start {
+  .price-start {
     font-size: 10px;
     line-height: 14px;
   }
-  -cost {
+  .price-cost {
     font-size: 24px;
     line-height: 33px;
   }
-  -end {
+  .price-end {
     font-size: 12px;
     line-height: 16px;
   }
-  -conditions {
+  .price-conditions {
     min-width: 80px;
   }
   .guests-info, .rooms-info {
@@ -2663,30 +2853,123 @@ template {
   .wrapper {
     max-width: 280px;
   }
+  .navbar-top {
+    padding: 30px 0;
+  }
   .book-info {
     width: 280px;
+    padding: 29px 21px 25px 24px;
+  }
+  .book-hotel {
+    padding: 16px 0 32px;
+  }
+  .hotel-container {
+    padding: 0 0 20px;
+  }
+  .hotel-advt {
+    margin-top: 5px;
+  }
+  .hotel-name {
+    margin: 15px 0 0;
   }
   .hotel-slider {
     width: 280px;
+    height: 180px;
+  }
+  .amenities {
+    line-height: 17px;
+    margin-top: 3px;
+  }
+  .price-end {
+    line-height: 9px;
   }
   .map {
     width: 280px;
+    height: 180px;
+  }
+  .map iframe {
+    height: 100%;
+  }
+  .newsletter {
+    padding: 78px 0 83px;
+  }
+  .newsletter-container {
+    min-height: 157px;
+  }
+  #newsletter-input {
+    width: 220px;
+    padding-left: 20px;
+  }
+  .reviews-title {
+    margin: 0 0 37px;
   }
   .reviews-slide-prev, .reviews-slide-next {
-    top: 9%;
+    top: 10%;
   }
   .reviews-slide-prev {
-    left: 30px;
+    left: 33px;
   }
   .reviews-slide-next {
-    right: 30px;
+    right: 36px;
+  }
+  .user-review {
+    text-align: left;
   }
   .activities {
-    padding: 40px 0 60px;
+    padding: 40px 0 69px;
   }
   .activities-title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .footer-section {
+    padding: 67px 0 33px;
+  }
+  .footer-card-title {
+    font-size: 18px;
+  }
+  .footer-card-container .categories .card-list-link {
+    line-height: 23px;
+  }
+  .footer-card-container .additions {
+    justify-self: start;
+  }
+  .footer-card-container .socials {
+    margin-top: 9px;
+  }
+  .footer-card-container .contacts {
+    margin-top: 8px;
+  }
+  .footer-card-container .contacts-title {
+    margin-bottom: 22px !important;
+  }
+  .footer-card-container .contacts-info {
+    margin: 0 0 24px;
+    line-height: 22px;
+  }
+  .footer-card-container .contacts-icon {
+    margin-right: 8px;
+  }
+  .footer-card-container .contacts-details-item {
+    margin-bottom: 28px;
+  }
+  .footer-card-container .contacts-details-link {
+    line-height: 20px;
+  }
+  .vr-logo {
+    width: 95px;
+  }
+  .feedback {
+    margin-top: 3px;
+  }
+  .feedback-title {
+    margin-bottom: 15px !important;
+  }
+  .feedback-required-element {
+    margin: 0 0 12px;
+  }
+  .sub-info {
+    margin: 0 0 7px;
   }
   .modal-window {
     max-width: 280px;
@@ -2809,9 +3092,6 @@ template {
     background-color: #e95974;
     transition: all .9s;
   }
-  .modal-window-button:hover {
-    background-color: #C91537;
-  }
   .modal-window-button:focus {
     outline: none;
   }
@@ -2889,9 +3169,6 @@ template {
   }
   .hr-search-icon:focus {
     outline: none;
-  }
-  .hr-search-icon:hover {
-    background-color: #C91537;
   }
   .hr-search-icon:active {
     background-color: #e95974;
@@ -3000,9 +3277,6 @@ template {
   }
   .hr-search-icon:focus {
     outline: none;
-  }
-  .hr-search-icon:hover {
-    background-color: #C91537;
   }
   .hr-search-icon:active {
     background-color: #e95974;
@@ -3154,9 +3428,6 @@ template {
     background-color: #e95974;
     transition: all .9s;
   }
-  .modal-window-button:hover {
-    background-color: #C91537;
-  }
   .modal-window-button:focus {
     outline: none;
   }
@@ -3234,9 +3505,6 @@ template {
   }
   .hr-search-icon:focus {
     outline: none;
-  }
-  .hr-search-icon:hover {
-    background-color: #C91537;
   }
   .hr-search-icon:active {
     background-color: #e95974;
@@ -3388,9 +3656,6 @@ template {
     background-color: #e95974;
     transition: all .9s;
   }
-  .modal-window-button:hover {
-    background-color: #C91537;
-  }
   .modal-window-button:focus {
     outline: none;
   }
@@ -3468,9 +3733,6 @@ template {
   }
   .hr-search-icon:focus {
     outline: none;
-  }
-  .hr-search-icon:hover {
-    background-color: #C91537;
   }
   .hr-search-icon:active {
     background-color: #e95974;
@@ -3621,9 +3883,6 @@ template {
   .modal-window-button:active {
     background-color: #e95974;
     transition: all .9s;
-  }
-  .modal-window-button:hover {
-    background-color: #C91537;
   }
   .modal-window-button:focus {
     outline: none;

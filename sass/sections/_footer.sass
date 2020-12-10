@@ -1,7 +1,7 @@
 .vr-logo
   grid-area: vr-logo
-  width: 150px
-  height: 165px
+  width: 153px
+  height: 174px
   margin-top: 30px
 .categories
   grid-area: categories
@@ -17,6 +17,7 @@
   min-height: 127px
   align-self: start
   justify-self: end
+  margin-right: 5px
 .socials
   grid-area: socials
   display: flex
@@ -24,11 +25,12 @@
   align-self: start
 .contacts
   grid-area: contacts
-  align-self: center
+  align-self: flex-start
+  margin-top: 10px
   &-title
     margin-bottom: 30px !important
   &-info
-    margin: 0 0 30px
+    margin: 0 0 24px
   &-details
     &-item
       display: flex
@@ -43,6 +45,8 @@
       font-size: 14px
       line-height: 22px
       color: $input-color
+      &:hover
+        color: $light-text-color
   &-phone
     display: flex
     flex-direction: row
@@ -99,8 +103,11 @@
     +focused-buttons
     +hover-form-elements
     +focused-form-elements
+    +box-shadow-light
   &-required-element
     color: $required
+    align-self: flex-start
+    margin-top: 20px
   &-accept
     background-color: $light-bgcolor
     padding: 50px 0
@@ -126,6 +133,8 @@
     justify-self: self-end
   &-section-item
     color: $light-text-color
+    &:hover
+      color: $hover-text-color
 
 .footer
   &-section
@@ -134,12 +143,12 @@
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 22px
+    line-height: 11px
     color: $input-color
   &-card
     &-container
       display: grid
-      grid-template: 195px 119px 120px min-content 116px/ repeat(4, 1fr)
+      grid-template: minmax(auto, 195px) 119px 120px min-content 116px/ repeat(4, 1fr)
       column-gap: 30px
       grid-template-areas: "vr-logo categories additions legacy" "vr-logo categories socials socials" "contacts contacts feedback feedback" "contacts contacts feedback feedback" "footer-subinfo footer-subinfo footer-subinfo info-features"
     &-title
@@ -148,7 +157,7 @@
       font-size: 18px
       line-height: 23px
       text-transform: uppercase
-      margin: 0 0 20px
+      margin: 0 0 15px
       color: $light-text-color
     &-list
       padding: 0
@@ -166,6 +175,11 @@
     font-size: 12px
     margin-right: 130px
     color: $light-text-color
+  &-title
+    &-link
+      color: $light-text-color
+      &:hover
+        color: $hover-text-color
 
 .card
   &-list
@@ -175,6 +189,8 @@
       font-size: 14px
       line-height: 22px
       color: $input-color
+      &:hover
+        color: $light-text-color
 
 .social
   &-title

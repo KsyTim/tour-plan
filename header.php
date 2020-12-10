@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css"/>
@@ -26,20 +28,21 @@
               />
             </a>
 
-            <form action="#" class="navbar-top-item search-form">
+            <form action="#" name="search-form" class="navbar-top-item search-form">
               <input
                 type="search"
                 placeholder="Search Location"
                 name="search-input"
                 id="search-form-input"
-              />
-              <button class="search-icon">
+                autofocus
+              />  
+              <button class="button search-icon">
                 <img src="img/search.svg" alt="Search: Enter location" />
               </button>
             </form>
 
             <div class="navbar-top-item user">
-              <a href="index.php" class="user-profile-link">
+              <a href="#" class="user-profile-link">
                 <img
                   src="img/user-ava.jpg"
                   alt="User Profile Photo"
@@ -47,7 +50,7 @@
                 />
               </a>
 
-              <a href="index.php" class="user-profile-name">
+              <a href="#">
                 <span class="user-name">Nathan</span>
               </a>
             </div>
@@ -69,7 +72,7 @@
             <ul class="navbar-items-container">
               <li class="navbar-item user-mobile">
                 <div class="user">
-                  <a href="index.php" class="user-profile-link">
+                  <a href="#" class="user-profile-link">
                     <img
                       src="img/user-ava.jpg"
                       alt="User Profile Photo"
@@ -77,7 +80,7 @@
                     />
                   </a>
 
-                  <a href="index.php" class="user-profile-name">
+                  <a href="#">
                     <span class="user-name">Nathan</span>
                   </a>
                 </div>
@@ -97,40 +100,40 @@
                 </form>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">all deals</a>
+                <a href="#" class="navbar-item-link">all deals</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">hotels</a>
+                <a href="#" class="navbar-item-link">hotels</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">activities</a>
+                <a href="#" class="navbar-item-link">activities</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link"
+                <a href="#" class="navbar-item-link"
                   >hotel day packages</a
                 >
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">restaurants</a>
+                <a href="#" class="navbar-item-link">restaurants</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">events</a>
+                <a href="#" class="navbar-item-link">events</a>
               </li>
               <li class="navbar-item">
-                <a href="index.php" class="navbar-item-link">rodrigues</a>
+                <a href="#" class="navbar-item-link">rodrigues</a>
               </li>
             </ul>
             <ul class="navbar-hr-container">
               <li class="hr-container-item hr-mobile_user">
                 <div class="hr-user-mobile">
-                  <a href="index.php" class="user-profile-link">
+                  <a href="#" class="user-profile-link">
                     <img
                       src="img/user-ava.jpg"
                       alt="User Profile Photo"
                       class="hr-user-photo"
                     />
                   </a>
-                  <a href="index.php" class="user-profile-name">
+                  <a href="#">
                     <span class="hr-user-name">Nathan</span>
                   </a>
                 </div>
@@ -152,33 +155,33 @@
               <li class="hr-container-item hr-mobile_sub">
                 <ul class="hr-mobile_subcontainer">
                   <li class="hr-mobile_subcontainer-item">
-                  <a href="index.php" class="hr-mobile_subcontainer-link"
+                  <a href="#" class="hr-mobile_subcontainer-link"
                     >all deals</a
                   >
                   </li>
                   <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link">hotels</a>
+                    <a href="#" class="hr-mobile_subcontainer-link">hotels</a>
                   </li>
                   <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link"
+                    <a href="#" class="hr-mobile_subcontainer-link"
                       >activities</a
                     >
                   </li>
                     <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link"
+                    <a href="#" class="hr-mobile_subcontainer-link"
                       >hotel&nbsp;day&nbsp;packages</a
                     >
                   </li>
                   <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link"
+                    <a href="#" class="hr-mobile_subcontainer-link"
                       >restaurants</a
                     >
                   </li>
                   <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link">events</a>
+                    <a href="#" class="hr-mobile_subcontainer-link">events</a>
                   </li>
                   <li class="hr-mobile_subcontainer-item">
-                    <a href="index.php" class="hr-mobile_subcontainer-link"
+                    <a href="#" class="hr-mobile_subcontainer-link"
                       >rodrigues</a
                     >
                   </li>

@@ -9,61 +9,61 @@
             />
         </a> 
           <div class="footer-container-item categories">
-            <h3 class="footer-card-title">all&nbsp;categories</h3>
+            <h3 class="footer-card-title"><a href="#" class="footer-title-link">all&nbsp;categories</a></h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">All Deals</a>
+                <a href="#" class="card-list-link">All Deals</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Hotels</a>
+                <a href="#" class="card-list-link">Hotels</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Activities</a>
+                <a href="#" class="card-list-link">Activities</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Spa Packages</a>
+                <a href="#" class="card-list-link">Spa Packages</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Hotel Day Packages</a
                 >
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Restaurants</a>
+                <a href="#" class="card-list-link">Restaurants</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Fitness </a>
+                <a href="#" class="card-list-link">Fitness </a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Rodrigues</a>
+                <a href="#" class="card-list-link">Rodrigues</a>
               </li>
             </ul>
           </div>
           <!-- /.footer-container-item .categories -->
           <div class="footer-container-item additions">
-            <h3 class="footer-card-title">additional&nbsp;information</h3>
+            <h3 class="footer-card-title"><a href="#" class="footer-title-link">additional&nbsp;information</a></h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">About Us </a>
+                <a href="#" class="card-list-link">About Us </a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Contact Us</a>
+                <a href="#" class="card-list-link">Contact Us</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">How does it work?</a>
+                <a href="#" class="card-list-link">How does it work?</a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Frequently Asked Questions</a
                 >
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Deals.mu loyalty program</a
                 >
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Promote your Business on BTP</a
                 >
               </li>
@@ -71,45 +71,45 @@
           </div>
           <!-- /.footer-container-item .additions -->
           <div class="footer-container-item legacy">
-            <h3 class="footer-card-title">legal&nbsp;information</h3>
+            <h3 class="footer-card-title"><a href="#" class="footer-title-link">legal&nbsp;information</a></h3>
             <ul class="footer-card-list">
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Terms & Conditions
                 </a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Disclaimer </a>
+                <a href="#" class="card-list-link">Disclaimer </a>
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link"
+                <a href="#" class="card-list-link"
                   >Cancellation policy</a
                 >
               </li>
               <li class="card-list-item">
-                <a href="index.php" class="card-list-link">Privacy</a>
+                <a href="#" class="card-list-link">Privacy</a>
               </li>
             </ul>
           </div>
           <!-- /.footer-container-item legacy -->
           <div class="footer-container-item socials">
-            <h3 class="footer-card-title social-title">social&nbsp;network</h3>
+            <h3 class="footer-card-title social-title"><a href="#" class="footer-title-link">social&nbsp;network</a></h3>
             <div class="social-nets">
-              <a href="index.php" class="social-nets-link">
+              <a href="#" class="social-nets-link">
                 <img
                   src="./img/facebook.svg"
                   alt="Socials: Facebook"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="index.php" class="social-nets-link">
+              <a href="#" class="social-nets-link">
                 <img
                   src="./img/youtube.svg"
                   alt="Socials: Youtube"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="index.php" class="social-nets-link">
+              <a href="#" class="social-nets-link">
                 <img
                   src="./img/instagram.svg"
                   alt="Socials: Instagram"
@@ -121,7 +121,7 @@
           </div>
           <!-- /.footer-container-item socials -->
           <div class="footer-container-item contacts">
-            <h3 class="footer-card-title contacts-title">contact details</h3>
+            <h3 class="footer-card-title contacts-title"><a href="#" class="footer-title-link">contact details</a></h3>
             <p class="contacts-info">
               Feel free to contact us by phone, email or
               by&nbsp;our&nbsp;contact&nbsp;form
@@ -157,8 +157,7 @@
                     52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</a
                   >
                   <a href="tel:52-56-61-38" class="contacts-details-link"
-                    >Tel (hotline) Sunday:
-                    52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;14:00pm)</a
+                    >Tel (hotline) Sunday:&nbsp;52-56-61-38 (08:00am&nbsp;–&nbsp;14:00pm)</a
                   >
                 </div>
                 <!-- /.contact-phone-info -->
@@ -182,7 +181,7 @@
           </div>
           <!-- /.footer-container-item contacts -->
           <div class="footer-container-item feedback">
-            <h3 class="footer-card-title feedback-title">send us message</h3>
+            <h3 class="footer-card-title feedback-title"><a href="#" class="footer-title-link">send us a message</a></h3>
             <form action="send.php" method="POST" class="feedback-form">
               <div class="feedback-areas">
                 <div class="feedback-areas-group">
@@ -221,15 +220,15 @@
                 >
                   Send
                 </button>
-                <span class="feedback-required-element">*Required Fields</span>
+                <span class="feedback-required-element">* Required Fields</span>
               </div>
             </form>
           </div>
           <!-- /.footer-container-item feedback -->
           <div class="footer-container-item footer-subinfo">
-            <a href="index.php" class="info-section-item">Disclaimer</a>
-            <a href="index.php" class="info-section-item">Conditions of use</a>
-            <a href="index.php" class="info-section-item"
+            <a href="#" class="info-section-item">Disclaimer</a>
+            <a href="#" class="info-section-item">Conditions of use</a>
+            <a href="#" class="info-section-item"
               >Cancellation policy</a
             >
           </div>
@@ -240,11 +239,11 @@
           <!-- /.footer-container-item .info-features -->
           <div class="footer-sub">
             <div class="footer-container-item sub-info">
-              <a href="index.php" class="info-section-item">Disclaimer</a>
-              <a href="index.php" class="info-section-item"
+              <a href="#" class="info-section-item">Disclaimer</a>
+              <a href="#" class="info-section-item"
                 >Conditions of use</a
               >
-              <a href="index.php" class="info-section-item"
+              <a href="#" class="info-section-item"
                 >Cancellation policy</a
               >
             </div>

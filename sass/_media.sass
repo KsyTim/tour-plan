@@ -2,6 +2,9 @@
   .wrapper
     max-width: 960px
 
+  .search-form
+    margin: 0 24% 0 10%
+
   .hotel
     &-slider
       width: 585px
@@ -23,7 +26,7 @@
             width: 52%
           &-info
             width: 50%
-            right: 0
+            right: 1px
           &-name
             margin: 0 0 15px
           &-description
@@ -75,11 +78,6 @@
 
   .hotel
     &-haven
-      // .package
-      //   &-card
-      //     &-info
-      //       width: 49%
-      //       right: 11px
       .card
         &-hotel
           &-pic
@@ -87,9 +85,6 @@
 
   .packages
     &-card
-      // width: 285px
-      // &:first-child
-      //   width: 610px
       &-container
         grid-gap: 20px
 
@@ -107,11 +102,16 @@
     width: 275px
   .navbar
     &-top
-      padding: 30px 0
+      padding: 29px 0
     &-item
       font-size: 12px
+      &-link
+        +hover-darklink-off
     &-sub
-      padding: 22px 0
+      padding: 21px 15px
+
+  .search-form
+    margin: 0 10% 0 7%
 
   .hotel
     &-slider
@@ -119,12 +119,21 @@
       margin-bottom: 30px
       &-item
         width: 100%
+      &-prev, &-next
+        top: 51%
+      &-prev
+        left: 16px
+      &-next
+        right: 16px
+    &-container
+      padding: 18px 0 14px
 
   .book
     &-hotel
       flex-direction: column
     &-info
       width: 340px
+      padding: 32px 22px 26px 24px
   .map
     width: 340px
 
@@ -136,10 +145,17 @@
     &-title
       font-size: 30px
       line-height: 38px
-      margin: 0 0 50px
+      margin: 0 0 39px
     &-slider
       &-item
         max-width: 579px
+    &-slide
+      &-prev, &-next
+        top: 52%
+      &-prev
+        left: 0
+      &-next
+        right: 0
   .user
     &-review
       max-width: 455px
@@ -149,6 +165,8 @@
     &-container
       flex-flow: row wrap
       align-items: flex-start
+      &-item
+        +hover-card-off
 
   .card
     width: 339px
@@ -162,7 +180,7 @@
         &-card
           &-info
             width: 50%
-            right: 0
+            right: 1px
         &-conditions
           margin-bottom: 37px !important
       .card
@@ -190,7 +208,7 @@
       &-info
         width: 340px
         right: 0
-        padding: 30px 21px 30px 32px
+        padding: 30px 21px 25px 32px
     &-conditions
       margin-bottom: 24px !important
 
@@ -199,9 +217,19 @@
       margin: 0 0 27px
       &-description
         margin: 0 0 34px
+    &-list
+      &-link
+        +hover-lightlink-off
+    &-title
+      max-width: 200px
+
+  .newsletter
+    padding: 92px 0
+    &-container
+      width: 100%
 
   .vr-logo
-    width: 105px
+    width: 96px
     height: 100%
     margin: 0
 
@@ -210,13 +238,22 @@
       padding: 73px 0 33px
     &-card
       &-container
-        grid-template: 110px 223px min-content min-content 55px/ repeat(3, 1fr)
-        grid-gap: 55px 30px
+        grid-template: min-content min-content min-content min-content 55px/ 156px 262px 1fr
+        grid-gap: 50px 30px
         grid-template-areas: "vr-logo socials socials" "categories additions legacy" "contacts contacts contacts" "feedback feedback feedback" "footer-subinfo footer-subinfo info-features"
     &-subinfo
-      margin: 0
+      margin: 14px 0 0
       align-self: flex-start
       justify-self: self-start
+    &-title
+      &-link
+        +hover-darklink-off
+
+  .additions
+    justify-self: end
+
+  .legacy
+    margin-right: 12px
 
   .socials
     align-self: center
@@ -224,6 +261,35 @@
   .info
     &-features
       align-self: flex-start
+      margin-top: 5px
+    &-section-item
+      +hover-darklink-off
+
+  .button
+    +hover-button-off
+    &-book-info
+      +hover-button-off
+
+  .user-ratings
+    +hover-button-off
+
+  .contacts
+    &-details
+      &-item
+        margin-bottom: 21px
+      &-link
+        +hover-lightlink-off
+      .contacts-email
+        margin: 0
+    &-title
+      margin-bottom: 29px !important
+  .feedback
+    width: 77%
+    margin-top: 12px
+    &-title
+      margin-bottom: 33px !important
+    &-required-element
+      font-size: 12px
 
 @media ( max-width:  767px)
   body
@@ -232,10 +298,17 @@
   .wrapper
     max-width: 620px
 
-  .navbar-top-item:nth-child(n+2), .header-sub
+  .header-sub
     display: none
-  .navbar-top-item:last-child
-    display: flex
+
+  .navbar-top
+    align-items: unset
+    justify-content: space-between
+    padding: 30px 0
+    &-item:nth-child(n+2)
+      display: none
+    &-item:last-child
+      display: flex
   .menu-s
     width: 16px
     height: 11px
@@ -282,7 +355,7 @@
 
   .newsletter
     &-container
-      width: 520px
+      width: 100%
 
   .info
     &-text
@@ -296,9 +369,11 @@
     width: 215px
 
   .reviews
+    padding: 40px 0 57px
     &-slider
       &-item
         max-width: 450px
+        padding: 13px 60px 33px 64px
 
   .user
     &-review
@@ -321,7 +396,7 @@
       .package
         &-card
           &-info
-            right: 0
+            right: 1px
         &-conditions
           margin-bottom: 20px !important
       .card
@@ -346,7 +421,10 @@
   .footer
     &-card
       &-container
+        display: grid
         grid-gap: 55px 20px
+        grid-template: min-content min-content min-content min-content 55px/ repeat(3, 1fr)
+        grid-template-areas: "vr-logo socials socials" "categories additions legacy" "contacts contacts contacts" "feedback feedback feedback" "footer-subinfo footer-subinfo info-features"
       &-title
         font-size: 16px
 
@@ -451,7 +529,7 @@
       .package
         &-card
           &-info
-            right: 0
+            right: 1px
             padding: 25px 22px
         &-conditions
           margin-bottom: 24px !important
@@ -471,7 +549,6 @@
       &-info
         width: 250px
         right: 0
-        // bottom: 21px
 
   .booking
     &-button
@@ -487,11 +564,6 @@
   .price
     &-new
       font-size: 20px
-
-  // .card
-  //   &-hotel
-  //     &-pic
-  //       height: 45%
 
   .socials
     grid-area: socials
@@ -513,12 +585,21 @@
       grid-column: 1/3
       align-self: flex-start
       justify-self: self-start
+    &-section
+      line-height: 18px
 
   .social
     &-title
       margin: 0 0 20px
     &-nets
       margin: 0
+
+  .additions
+    justify-self: start
+
+  .feedback
+    width: 100%
+    margin-top: 0
 
 @media ( max-width:  570px)
   .wrapper
@@ -563,7 +644,7 @@
 
   .price
     &-main
-      width: 75px
+      min-width: 75px
     &-cost
       font-size: 18px
       line-height: 24px
@@ -629,7 +710,7 @@
         &-card
           &-info
             width: 100%
-            height: 55%
+            height: 55% !important
             padding: 30px 21px 30px 32px
             border-radius: 0px 0px 8px 8px
         &-conditions
@@ -656,8 +737,8 @@
     &-card
       &-info
         width: 100%
-        min-height: 50%
-        padding: 30px 21px 30px 32px
+        height: 50%
+        padding: 30px 21px 25px 32px
     &-conditions
       width: 210px
       height: 67px
@@ -701,7 +782,7 @@
       grid-area: footer-sub
     &-card
       &-container
-        grid-template: 125px 63px 127px 171px min-content min-content min-content min-content/ 100%
+        grid-template: repeat(8, min-content) / 100%
         row-gap: 30px
         column-gap: 0
         grid-template-areas: "vr-logo" "socials" "legacy" "additions" "categories" "contacts" "feedback" "footer-sub"
@@ -762,18 +843,18 @@
 
   .price
     &-main
-      width: 86px
-  &-start
-    font-size: 10px
-    line-height: 14px
-  &-cost
-    font-size: 24px
-    line-height: 33px
-  &-end
-    font-size: 12px
-    line-height: 16px
-  &-conditions
-    min-width: 80px
+      min-width: 86px
+    &-start
+      font-size: 10px
+      line-height: 14px
+    &-cost
+      font-size: 24px
+      line-height: 33px
+    &-end
+      font-size: 12px
+      line-height: 16px
+    &-conditions
+      min-width: 80px
 
   .guests, .rooms
     &-info
@@ -877,30 +958,115 @@
   .wrapper
     max-width: 280px
 
-  .book-info
-    width: 280px
+  .navbar-top
+    padding: 30px 0
+
+  .book
+    &-info
+      width: 280px
+      padding: 29px 21px 25px 24px
+    &-hotel
+      padding: 16px 0 32px
 
   .hotel
+    &-container
+      padding: 0 0 20px
+    &-advt
+      margin-top: 5px
+    &-name
+      margin: 15px 0 0
     &-slider
       width: 280px
+      height: 180px
+
+  .amenities
+    line-height: 17px
+    margin-top: 3px
+
+  .price
+    &-end
+      line-height: 9px
 
   .map
     width: 280px
+    height: 180px
+    iframe
+      height: 100%
+
+  .newsletter
+    padding: 78px 0 83px
+    &-container
+      min-height: 157px
+
+  #newsletter-input
+    width: 220px
+    padding-left: 20px
 
   .reviews
+    &-title
+      margin: 0 0 37px
     &-slide
       &-prev, &-next
-        top: 9%
+        top: 10%
       &-prev
-        left: 30px
+        left: 33px
       &-next
-        right: 30px
+        right: 36px
+
+  .user
+    &-review
+      text-align: left
 
   .activities
-    padding: 40px 0 60px
+    padding: 40px 0 69px
     &-title
       font-size: 18px
       line-height: 23px
+
+  .footer
+    &-section
+      padding: 67px 0 33px
+    &-card
+      &-title
+        font-size: 18px
+      &-container
+        .categories
+          .card
+            &-list
+              &-link
+                line-height: 23px
+        .additions
+          justify-self: start
+        .socials
+          margin-top: 9px
+        .contacts
+          margin-top: 8px
+          &-title
+            margin-bottom: 22px !important
+          &-info
+            margin: 0 0 24px
+            line-height: 22px
+          &-icon
+            margin-right: 8px
+          &-details
+            &-item
+              margin-bottom: 28px
+            &-link
+              line-height: 20px
+
+  .vr-logo
+    width: 95px
+
+  .feedback
+    margin-top: 3px
+    &-title
+      margin-bottom: 15px !important
+    &-required-element
+      margin: 0 0 12px
+
+  .sub
+    &-info
+      margin: 0 0 7px
 
   .modal
     &-window
@@ -920,415 +1086,6 @@
     &-title
       font-size: 16px
       margin: 0
-
-// @media screen and (min-width: 681px) and (max-width: 767px) and (orientation: landscape)
-//   .header
-//     &-sub--mobile-visible
-//       padding: 50px 0
-
-//   #hr-form-input
-//     width: 80%
-//     height: 40px
-//     font-size: 12px
-//     line-height: 15px
-//     padding-left: 23px
-//     background-color: $light-bgcolor
-//     border-radius: 6px 0 0 6px
-//     display: inline-block
-//     vertical-align: middle
-//     +focused-form-elements
-
-//   .hr
-//     &-user
-//       &-mobile
-//         display: flex
-//         align-items: center
-//       &-photo
-//         width: 40px
-//         height: 40px
-//         border-radius: 40px
-//         object-fit: cover
-//         margin-right: 18px
-//       &-name
-//         font-size: 14px
-//         line-height: 18px
-//         color: $light-text-color
-//         font-style: normal
-//         font-weight: normal
-//     &-search
-//       &-icon
-//         display: inline-block
-//         vertical-align: middle
-//         width: 20%
-//         height: 40px
-//         background-color: $button-color
-//         border-radius: 0 6px 6px 0
-//         cursor: pointer
-//         +focused-form-elements
-//         +hover-form-elements
-//         +focused-buttons
-//     &-mobile
-//       &--user
-//         grid-area: user-hr-mobile
-//         justify-self: center
-//       &--form
-//         grid-area: form-hr-mobile
-//         grid-column: 3 / 6
-//       &--column
-//         &-first
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: first-column
-//         &-second
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: second-column
-//         &-third
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: third-column
-//     &-subcontainer
-//       list-style: none
-//       padding: 0
-//       margin: 0
-//       &-item
-//         margin-bottom: 15px
-//       &-link
-//         color: $light-text-color
-
-//   .navbar
-//     &-items
-//       &-container
-//         display: none
-//     &-hr
-//       &-container
-//         display: grid
-//         grid-template: 40px 90px / repeat(5, min-content)
-//         grid-gap: 45px 137px
-//         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
-//         list-style: none
-//         padding: 0
-//         margin: 0
-//         font-size: 0
-
-// @media screen and (min-width: 571px) and (max-width: 681px) and (orientation: landscape)
-//   .header
-//     &-sub--mobile-visible
-//       padding: 45px 0
-
-//   #hr-form-input
-//     width: 80%
-//     height: 40px
-//     font-size: 12px
-//     line-height: 15px
-//     padding-left: 23px
-//     background-color: $light-bgcolor
-//     border-radius: 6px 0 0 6px
-//     display: inline-block
-//     vertical-align: middle
-//     +focused-form-elements
-
-//   .hr
-//     &-user
-//       &-mobile
-//         display: flex
-//         align-items: center
-//       &-photo
-//         width: 40px
-//         height: 40px
-//         border-radius: 40px
-//         object-fit: cover
-//         margin-right: 18px
-//       &-name
-//         font-size: 14px
-//         line-height: 18px
-//         color: $light-text-color
-//         font-style: normal
-//         font-weight: normal
-//     &-search
-//       &-icon
-//         display: inline-block
-//         vertical-align: middle
-//         width: 20%
-//         height: 40px
-//         background-color: $button-color
-//         border-radius: 0 6px 6px 0
-//         cursor: pointer
-//         +focused-form-elements
-//         +hover-form-elements
-//         +focused-buttons
-//     &-mobile
-//       &--user
-//         grid-area: user-hr-mobile
-//         justify-self: center
-//       &--form
-//         grid-area: form-hr-mobile
-//         grid-column: 3 / 6
-//       &--column
-//         &-first
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: first-column
-//         &-second
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: second-column
-//         &-third
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: third-column
-//     &-subcontainer
-//       list-style: none
-//       padding: 0
-//       margin: 0
-//       &-item
-//         margin-bottom: 15px
-//       &-link
-//         color: $light-text-color
-
-//   .navbar
-//     &-items
-//       &-container
-//         display: none
-//     &-hr
-//       &-container
-//         display: grid
-//         grid-template: 40px 90px / repeat(5, min-content)
-//         grid-gap: 45px 103px
-//         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
-//         list-style: none
-//         padding: 0
-//         margin: 0
-//         font-size: 0
-
-// @media screen and (min-width: 481px) and (max-width: 570px) and (orientation: landscape)
-//   .header
-//     &-sub--mobile-visible
-//       padding: 40px 0
-
-//   #hr-form-input
-//     width: 75%
-//     height: 40px
-//     font-size: 12px
-//     line-height: 15px
-//     padding-left: 23px
-//     background-color: $light-bgcolor
-//     border-radius: 6px 0 0 6px
-//     display: inline-block
-//     vertical-align: middle
-//     +focused-form-elements
-
-//   .hr
-//     &-user
-//       &-mobile
-//         display: flex
-//         align-items: center
-//       &-photo
-//         width: 40px
-//         height: 40px
-//         border-radius: 40px
-//         object-fit: cover
-//         margin-right: 18px
-//       &-name
-//         font-size: 14px
-//         line-height: 18px
-//         color: $light-text-color
-//         font-style: normal
-//         font-weight: normal
-//     &-search
-//       &-icon
-//         display: inline-block
-//         vertical-align: middle
-//         width: 25%
-//         height: 40px
-//         background-color: $button-color
-//         border-radius: 0 6px 6px 0
-//         cursor: pointer
-//         +focused-form-elements
-//         +hover-form-elements
-//         +focused-buttons
-//     &-mobile
-//       &--user
-//         grid-area: user-hr-mobile
-//         justify-self: center
-//       &--form
-//         grid-area: form-hr-mobile
-//         grid-column: 3 / 6
-//       &--column
-//         &-first
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: first-column
-//         &-second
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: second-column
-//           grid-column: 3/5
-//         &-third
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: third-column
-//     &-subcontainer
-//       list-style: none
-//       padding: 0
-//       margin: 0
-//       &-item
-//         margin-bottom: 15px
-//       &-link
-//         color: $light-text-color
-
-//   .navbar
-//     &-items
-//       &-container
-//         display: none
-//     &-hr
-//       &-container
-//         display: grid
-//         grid-template: 40px 90px / repeat(5, min-content)
-//         grid-gap: 45px 68px
-//         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column third-column"
-//         list-style: none
-//         padding: 0
-//         margin: 0
-//         font-size: 0
-
-// // @media screen and (min-width: 366px) and (max-width: 480px) and (orientation: landscape)
-//   .header
-//     &-sub--mobile-visible
-//       padding: 22px 0
-
-//   #hr-form-input
-//     width: 70%
-//     height: 40px
-//     font-size: 12px
-//     line-height: 15px
-//     padding-left: 15px
-//     background-color: $light-bgcolor
-//     border-radius: 6px 0 0 6px
-//     display: inline-block
-//     vertical-align: middle
-//     +focused-form-elements
-
-//   .hr
-//     &-user
-//       &-mobile
-//         display: flex
-//         align-items: center
-//       &-photo
-//         width: 40px
-//         height: 40px
-//         border-radius: 40px
-//         object-fit: cover
-//         margin-right: 18px
-//       &-name
-//         font-size: 14px
-//         line-height: 18px
-//         color: $light-text-color
-//         font-style: normal
-//         font-weight: normal
-//     &-search
-//       &-icon
-//         display: inline-block
-//         vertical-align: middle
-//         width: 30%
-//         height: 40px
-//         background-color: $button-color
-//         border-radius: 0 6px 6px 0
-//         cursor: pointer
-//         +focused-form-elements
-//         +hover-form-elements
-//         +focused-buttons
-//     &-mobile
-//       &--user
-//         grid-area: user-hr-mobile
-//         justify-self: center
-//       &--form
-//         grid-area: form-hr-mobile
-//         grid-column: 3 / 6
-//       &--column
-//         &-first
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: first-column
-//         &-second
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: second-column
-//         &-third
-//           font-style: normal
-//           font-weight: bold
-//           font-size: 12px
-//           line-height: 15px
-//           text-transform: uppercase
-//           color: $light-text-color
-//           grid-area: third-column
-//     &-subcontainer
-//       list-style: none
-//       padding: 0
-//       margin: 0
-//       &-item
-//         margin-bottom: 15px
-//       &-link
-//         color: $light-text-color
-
-//   .navbar
-//     &-items
-//       &-container
-//         display: none
-//     &-hr
-//       &-container
-//         display: grid
-//         grid-template: 40px 90px min-content / repeat(5, min-content)
-//         grid-gap: 25px 77px
-//         grid-template-areas: "user-hr-mobile user-hr-mobile form-hr-mobile form-hr-mobile form-hr-mobile" "first-column first-column second-column second-column second-column" "third-column third-column third-column third-column third-column"
-//         list-style: none
-//         padding: 0
-//         margin: 0
-//         font-size: 0
 
 @media screen and (min-width: 571px) and (max-width: 780px) and (orientation: landscape)
   .modal
@@ -1408,7 +1165,6 @@
         font-size: 12px
         line-height: 15px
         +focused-buttons
-        +hover-form-elements
         +focused-form-elements
       &-required
         color: $required
@@ -1472,7 +1228,6 @@
         border-radius: 0 6px 6px 0
         cursor: pointer
         +focused-form-elements
-        +hover-form-elements
         +focused-buttons
     &-mobile
       &_user
@@ -1567,7 +1322,6 @@
         border-radius: 0 6px 6px 0
         cursor: pointer
         +focused-form-elements
-        +hover-form-elements
         +focused-buttons
     &-mobile
       &_user
@@ -1695,7 +1449,6 @@
         font-size: 12px
         line-height: 15px
         +focused-buttons
-        +hover-form-elements
         +focused-form-elements
       &-required
         color: $required
@@ -1759,7 +1512,6 @@
         border-radius: 0 6px 6px 0
         cursor: pointer
         +focused-form-elements
-        +hover-form-elements
         +focused-buttons
     &-mobile
       &_user
@@ -1887,7 +1639,6 @@
         font-size: 12px
         line-height: 15px
         +focused-buttons
-        +hover-form-elements
         +focused-form-elements
       &-required
         color: $required
@@ -1951,7 +1702,6 @@
         border-radius: 0 6px 6px 0
         cursor: pointer
         +focused-form-elements
-        +hover-form-elements
         +focused-buttons
     &-mobile
       &_user
@@ -2079,7 +1829,6 @@
         font-size: 12px
         line-height: 15px
         +focused-buttons
-        +hover-form-elements
         +focused-form-elements
       &-required
         color: $required
