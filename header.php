@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/aos.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>

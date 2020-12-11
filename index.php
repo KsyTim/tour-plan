@@ -66,7 +66,7 @@
           </div>
           <div class="swiper-slide hotel-slider-item">
             <img
-              src="./img/hotel-slider-img-02.png"
+              src="./img/hotel-slider-img-02.jpg"
               class="hotel-pic"
               alt="Hotel Photo: Slide"
             />

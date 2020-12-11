@@ -326,7 +326,6 @@
     </div>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=06e6d0df-892f-4500-854c-4b40db30a38a&lang=en_US"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
