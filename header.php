@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="preload"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,7 +18,7 @@
       <div class="header-top header-top--mobile-fixed">
         <div class="wrapper">
           <div class="navbar-top">
-            <a href="index.php" class="navbar-top-item logo">
+            <a href="https://timoshenkokseniia.ru/tour-plan/" class="navbar-top-item logo">
               <img
                 src="img/hr-logo.svg"
                 alt="Logo: Best Tour Plan - Hotel Booking"
@@ -200,13 +198,13 @@
       <div class="wrapper">
         <ul class="bread-crumb">
           <li class="bread-crumb-item">
-            <a href="index.php" class="bread-crumb-link">Home</a>
+            <a href="https://timoshenkokseniia.ru/tour-plan/" class="bread-crumb-link">Home</a>
           </li>
           <li class="bread-crumb-item">
-            <a href="index.php" class="bread-crumb-link">Flash Offers</a>
+            <a href="#" class="bread-crumb-link">Flash Offers</a>
           </li>
           <li class="bread-crumb-item">
-            <a href="index.php" class="bread-crumb-link">Grand Hilton Hotel</a>
+            <a href="https://timoshenkokseniia.ru/tour-plan/" class="bread-crumb-link">Grand Hilton Hotel</a>
           </li>
         </ul>
         <!-- /.bread-crumb -->

@@ -1,7 +1,7 @@
   <footer class="footer-section">
       <div class="wrapper">
         <div class="footer-card-container">
-          <a href="index.php">          
+          <a href="https://timoshenkokseniia.ru/tour-plan/">          
             <img
               src="./img/vr-logo.svg"
               alt="Footer Logo"
@@ -95,21 +95,21 @@
           <div class="footer-container-item socials">
             <h3 class="footer-card-title social-title"><a href="#" class="footer-title-link">social&nbsp;network</a></h3>
             <div class="social-nets">
-              <a href="#" class="social-nets-link">
+              <a href="https://www.facebook.com/" target="_blank" class="social-nets-link">
                 <img
                   src="./img/facebook.svg"
                   alt="Socials: Facebook"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="#" class="social-nets-link">
+              <a href="https://www.youtube.com/" target="_blank" class="social-nets-link">
                 <img
                   src="./img/youtube.svg"
                   alt="Socials: Youtube"
                   class="social-nets-pic"
                 />
               </a>
-              <a href="#" class="social-nets-link">
+              <a href="https://www.instagram.com/" target="_blank" class="social-nets-link">
                 <img
                   src="./img/instagram.svg"
                   alt="Socials: Instagram"
@@ -149,16 +149,25 @@
                   class="contacts-icon"
                 />
                 <div class="contacts-details-info">
-                  <a href="tel:2691500" class="contacts-details-link"
-                    >Tel (business hours) : 269 1500</a
-                  >
-                  <a href="tel:52-56-61-38" class="contacts-details-link"
-                    >Tel (hotline) Monday - Saturday:
-                    52-56-61-38&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</a
-                  >
-                  <a href="tel:52-56-61-38" class="contacts-details-link"
-                    >Tel (hotline) Sunday:&nbsp;52-56-61-38 (08:00am&nbsp;–&nbsp;14:00pm)</a
-                  >
+                  <div class="contacts-info-item">
+                    <span>Tel (business hours) :&nbsp;</span>
+                    <a href="tel:2691500" class="contacts-details-link"
+                    > 269 1500</a>
+                  </div>
+                  <div class="contacts-info-item">
+                    <span>Tel (hotline) Monday - Saturday:</span>
+                    <a href="tel:52-56-61-38" class="contacts-details-link"
+                      >
+                      52-56-61-38</a
+                    ><span>&nbsp;(08:00am&nbsp;–&nbsp;20:00pm)</span>
+                  </div>
+                  <div class="contacts-info-item">
+                    <span>Tel (hotline) Sunday:&nbsp;</span>
+                    <a href="tel:52-56-61-38" class="contacts-details-link"
+                      >52-56-61-38</a
+                    >
+                    <span>(08:00am&nbsp;–&nbsp;14:00pm)</span>
+                  </div>  
                 </div>
                 <!-- /.contact-phone-info -->
               </div>

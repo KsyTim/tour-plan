@@ -33,7 +33,7 @@
           </div>
           <!-- /.about-hotel-item hotel-rate -->
           <h2 class="hotel-name">grand hilton hotel</h2>
-          <a href="index.php" class="button hotel-advt">Flash Offer</a>
+          <a href="#" class="button hotel-advt">Flash Offer</a>
         </div>
         <!-- /.about-hotel-item hotel-description -->
         <div class="about-hotel-item amenities">
@@ -164,7 +164,7 @@
     <h2 class="packages-title">other packages</h2>
     <div class="packages-card-container">
       <div class="packages-card hotel-haven" data-aos="fade" data-aos-offset="100" data-aos-easing="ease-in-sine">
-        <a href="index.php" class="button card-hotel-advt">Flash Offer</a>
+        <a href="#" class="button card-hotel-advt">Flash Offer</a>
         <img
           src="./img/card-haven.jpg"
           alt="Hotel: Blue Haven"
@@ -256,7 +256,7 @@
           alt="Hotel: LUX* Belle Mare"
           class="card-hotel-pic"
         />
-        <a href="index.php" class="button card-hotel-advt">Flash Offer</a>
+        <a href="#" class="button card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">LUX* Belle Mare</h3>
           <div class="package-conditions">
@@ -310,7 +310,7 @@
           alt="Hotel: White Palace"
           class="card-hotel-pic"
         />
-        <a  href="index.php" class="button card-hotel-advt">Flash Offer</a>
+        <a  href="#" class="button card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">White Palace</h3>
           <div class="package-conditions">
@@ -364,7 +364,7 @@
           alt="Hotel: Luxury Place"
           class="card-hotel-pic"
         />
-        <a href="index.php" class="button card-hotel-advt">Flash Offer</a>
+        <a href="#" class="button card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">Luxury Place</h3>
           <div class="package-conditions">
@@ -418,7 +418,7 @@
           alt="Hotel: Five Star"
           class="card-hotel-pic"
         />
-        <a href="index.php" class="button card-hotel-advt">Flash Offer</a>
+        <a href="#" class="button card-hotel-advt">Flash Offer</a>
         <div class="package-card-info">
           <h3 class="card-hotel-name">Hotel Five Star</h3>
           <div class="package-conditions">

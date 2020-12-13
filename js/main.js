@@ -20,11 +20,9 @@ $(document).ready(function () {
 
   $('.hotel-slider').on({
     mouseenter: function () {
-      console.log('stop hotel-slider autoplay');
       hotelSwiper.autoplay.stop();
     },
     mouseleave: function () {
-      console.log('start hotel-slider autoplay');
       hotelSwiper.autoplay.start();
     }
   });
@@ -49,36 +47,12 @@ $(document).ready(function () {
   });
   $('.reviews-slider').on({
     mouseenter: function () {
-      console.log('stop reviews-slider autoplay');
       reviewsSwiper.autoplay.stop();
     },
     mouseleave: function () {
-      console.log('start reviews-slider autoplay');
       reviewsSwiper.autoplay.start();
     }
   });
-
-
-  // ymaps.ready(init);
-  // function init() {
-  //   var myMap = new ymaps.Map("map", {
-  //     center: [18.440072583306193, 110.01730095614566],
-  //     zoom: 10
-  //   },
-  //   ),
-  //     myGeoObject = new ymaps.GeoObject({
-  //       geometry: {
-  //         type: "Point",
-  //         coordinates: [18.45, 110.02]
-  //       },
-  //     });
-  //   myMap.geoObjects.add(myGeoObject);
-  
-  // }
-
-  // $('.newsletter').parallax({
-  //   speed: 0.8,
-  // });
 
   var menuButton = $('.menu-s');
   menuButton.on("click", function (event) {
